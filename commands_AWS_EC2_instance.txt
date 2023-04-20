@@ -1,0 +1,6 @@
+chmod 400 FastAPI1.pem
+ssh -i "FastAPI1.pem" ubuntu@ec2-54-191-200-254.us-west-2.compute.amazonaws.com
+scp -i  "C:\Users\ishan_borker\Desktop\FastAPI_NER_Deployment\app\FastAPI1.pem" -r "C:\Users\ishan_borker\Desktop\FastAPI_NER_Deployment" ubuntu@54.191.200.254:/home/ubuntu/Desktop
+ssh -i <key.pem> -NL 8890:localhost:8888 ubuntu@ip
+
+ssh -i nvidiaCV2.pem -NL 8890:localhost:8888 ubuntu@34.210.92.248

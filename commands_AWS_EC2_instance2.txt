@@ -1,0 +1,907 @@
+    1  ls
+    2  mkdir Desktop
+    3  ls
+    4  cd Desktop/
+    5  ls
+    6  sudo apt-get update
+    7  sudo apt-get install curl
+    8  curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+    9  cd Desktop/
+   10  cd /tmp/
+   11  curl -O https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+   12  bash Anaconda3-2020.07-Linux-x86_64.sh
+   13  conda init
+   14  bash Anaconda3-2020.07-Linux-x86_64.sh
+   15  ls
+   16  cd
+   17  cd /home/ubuntu/
+   18  ls
+   19  rn -r anaconda3/
+   20  rm -r anaconda3/
+   21  bash Anaconda3-2020.07-Linux-x86_64.sh
+   22  cd /tmp/
+   23  bash Anaconda3-2020.07-Linux-x86_64.sh
+   24  conda config --set auto_activate_basetrue
+   25  conda config --set auto_activate_base true
+   26  conda initi
+   27  conda init
+   28  cd
+   29  cd /home/ubuntu/anaconda3/
+   30  conda init
+   31  source ~/.bashrc
+   32
+   33  conda list
+   34  conda config --set auto_activate_base True
+   35  bash Anaconda3-2020.07-Linux-x86_64.sh
+   36  cd /tmp/
+   37  bash Anaconda3-2020.07-Linux-x86_64.sh
+   38  cd /home/ubuntu/
+   39  ls
+   40  rm -r anaconda3/
+   41  cd Desktop/
+   42  bash Anaconda3-2020.07-Linux-x86_64.sh
+   43  cd /tmp/
+   44  bash Anaconda3-2020.07-Linux-x86_64.sh
+   45  cd /home/ubuntu/anaconda3/
+   46  ls
+   47  conda init
+   48  cd /tmp/
+   49  ls
+   50  source ~/.bashrc
+   51  conda list
+   52  conda --version
+   53  sha256sum Anaconda3-2020.07-Linux-x86_64.sh
+   54  bash Anaconda3-2020.07-Linux-x86_64.sh
+   55  conda init
+   56  cd /home/ubuntu/anaconda3/
+   57  conda init
+   58  anaconda init
+   59  cd
+   60  cd /tmp/
+   61  ls
+   62  cd /home/ubuntu/
+   63  ls
+   64  rm -r anaconda3/
+   65  pwd
+   66  wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+   67  sha256sum /tmp/Anaconda3-2020.02-Linux-x86_64.sh
+   68  bash /tmp/Anaconda3-2020.02-Linux-x86_64.sh
+   69  conda init
+   70  cd /home/ubuntu/
+   71  ls
+   72  rm -r anaconda3/
+   73  bash /tmp/Anaconda3-2020.02-Linux-x86_64.sh
+   74  cd /home/ubuntu/anaconda3/bin/
+   75  ls
+   76  conda init
+   77  conda config --set auto_activate_base false\
+   78  conda config --set auto_activate_base true
+   79  cd
+   80  cd /home/ubuntu/
+   81  rm -r anaconda3/
+   82  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   83  chmod +x Miniconda3-latest-Linux-x86_64.sh
+   84  ./Miniconda3-latest-Linux-x86_64.sh
+   85  cd /home/ubuntu/
+   86  rm -r miniconda3/
+   87  ./Miniconda3-latest-Linux-x86_64.sh
+   88  conda iniit
+   89  conda init
+   90  exit
+   91  conda init
+   92  cond create --name fastapi
+   93  conda create --name fastapi
+   94  conda activate fastapi
+   95  cd Desktop/FastAPI_NER_Deployment/app/
+   96  python --version
+   97  python3 --version
+   98  conda install -c anaconda python=3.8
+   99  pip3 install -r requirements.txt
+  100  ls
+  101  cd ..
+  102  cd ner_pytorch_medical/
+  103  ls
+  104  pip3 install -r requirements.txt
+  105  cd models/
+  106  ls
+  107  cd output_roberta_7_ner/
+  108  pwd
+  109  cd ..
+  110  cd app/
+  111  ls
+  112  vi main.py
+  113  cd ..
+  114  cd
+  115  ls
+  116  vi Dockerfile
+  117  touch Dockerfile
+  118  pip freeze > requirements.txt
+  119  sudo yum install -y docker
+  120  sudo apt install -y docker
+  121  df -h
+  122  free -h
+  123  sudo groupadd docker
+  124  sudo service docker restart
+  125  sudo service docker start
+  126  docker build -t fastapi-demo .
+  127  sudo apt  install docker.io
+  128  docker build -t fastapi-demo .
+  129  docker build -t fastapi:latest .
+  130  history
+  131  history > commands.txt
+  132  ls
+  133  mv commands.txt /home/ubuntu/D
+  134  mv commands.txt /home/ubuntu/Desktop/FastAPI_NER_Deployment/
+  135  ls
+  136  cd /home/ubuntu/
+  137  ls
+  138  cd D
+  139  rm -r D
+  140  ls
+  141  pwd
+  142  history > commands.txt
+  143  mv commands.txt /home/ubuntu/Desktop/
+  144  docker build -t fastapi:latest .
+  145  sudo service docker start
+  146  docker build -t fastapi:latest .
+  147  sudo usermod -aG docker $ubuntu
+  148  sudo usermod -aG docker ubuntu
+  149  docker build -t fastapi:latest .
+  150  sudo usermod -aG docker $USER
+  151  sudo service docker start
+  152  sudo service docker restart
+  153  docker build -t fastapi:latest .
+  154  sudo systemctl restart docker
+  155  docker ps
+  156  sudo chmod 666 /var/run/docker.sock
+  157  docker ps
+  158  sudo systemctl restart docker
+  159  docker ps
+  160  sudo service docker restart
+  161  sudo service docker start
+  162  docker build -t fastapi:latest .
+  163  history
+  164  sudo service docker restart
+  165  /
+  166  sudo service docker restart
+  167  docker build -t fastapi:latest .
+  168  sudo usermod -a -G docker $USER
+  169  docker build -t fastapi:latest .
+  170  sudo systemctl restart docker
+  171  sudo apt install -y docker
+  172  sudo usermod -a -G docker $USER
+  173  docker build -t fastapi:latest .
+  174  pwd
+  175  cd
+  176  pwd
+  177  cd Desktop/
+  178  docker build -t fastapi:latest .
+  179  cd
+  180  vi Dockerfile
+  181  docker build -t fastapi:latest .
+  182  vi Dockerfile
+  183  docker build -t fastapi:latest .
+  184  df -h
+  185  docker build -t fastapi:latest .
+  186  clear
+  187  docker build -t fastapi:latest .
+  188  docker ps
+  189  sudo docker ps
+  190  sudo docker build -t fastapi:latest .
+  191  pwd
+  192  cd Desktop/
+  193  cd FastAPI_NER_Deployment/
+  194  sudo docker build -t fastapi:latest .
+  195  ls
+  196  cd app/
+  197  ls
+  198  vim Dockerfile
+  199  ls
+  200  cat Dockerfile
+  201  sudo docker build -t fastapi:latest .
+  202  rm Dockerfile
+  203  cd ..
+  204  mv Dockerfile app/
+  205  cd app/
+  206  sudo docker build -t fastapi:latest .
+  207  docker run -p 5000:5000 api:latest
+  208  sudo docker run -p 5000:5000 fastapi:latest
+  209  exit
+  210  df -h
+  211  ls
+  212  vi Dockerfile
+  213  cd Desktop/FastAPI_NER_Deployment/app/
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd
+  218  mv Dockerfile /home/ubuntu/Desktop/FastAPI_NER_Deployment/
+  219  ls
+  220  cd Desktop/
+  221  cd FastAPI_NER_Deployment/
+  222  ls
+  223  cat Dockerfile
+  224  ls
+  225  cd app/
+  226  ls
+  227  cat Dockerfile
+  228  cat requirements.txt
+  229  cd ..
+  230  du -sh app/
+  231  exit
+  232  ls
+  233  cd Desktop/
+  234  ls
+  235  FastAPI_NER_Deployment/
+  236  cd FastAPI_NER_Deployment/
+  237  ls
+  238  cd app
+  239  ls
+  240  nano Dokerfile
+  241  ls
+  242  nano Dockerfile
+  243  history
+  244  sudo docker build -t fastapi:latest .
+  245  history
+  246  docker container ls
+  247  docker container ls -a
+  248  docker logs c4ba530d9615
+  249  docker run c4ba530d9615
+  250  conda activate fastapi
+  251  history
+  252  sudo docker build -t fastapi:latest .
+  253  ls
+  254  cd /home/ubuntu/
+  255  ls
+  256  cd Desktop/FastAPI_NER_Deployment/
+  257  ls
+  258  cd app/
+  259  ls
+  260  sudo docker build -t fastapi:latest .
+  261  cd ..
+  262  cd ner_pytorch_medical/models/
+  263  ls
+  264  cd output_roberta_7_ner/
+  265  ls
+  266  cd ..
+  267  python -m spacy package models/output_roberta_7_ner/ packaged_models/
+  268  pip3 install spacy_transformers
+  269  python -m spacy package models/output_roberta_7_ner/ packaged_models/
+ 270  python -m spacy package models/output_roberta_7_ner/ packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_model.py
+  271  pip install torch
+  272  cd package
+  273  cd packaged_models/
+  274  ls
+  275  cd en_chia_ner_pipeline_trf-0.0.0/
+  276  ls
+  277  python setup.py sdist
+  278  ls
+  279  cd dist/
+  280  ls
+  281  python -m pip install en_chia_ner_pipeline_trf-0.0.0.tar.gz
+  282  cd ..
+  283  cd app/
+  284  history
+  285  sudo docker run -p 5000:5000 fastapi:latest
+  286  df -h
+  287  ls
+  288  history
+  289  python3 -m spacy download en_core_web_sm
+  290  sudo docker run -p 5000:5000 fastapi:latest
+  291  python -m uvicorn main:app --reload
+  292  cd ..
+  293  cd ner_pytorch_medical/
+  294  python -m spacy package models/output_roberta_7_ner/ packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_pipe.py
+  295  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_pipe.py
+  296  cd scripts/
+  297  ls
+  298  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/visualize_model.py
+  299  cd ..
+  300  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/visualize_model.py
+  301  pip3 install spacy_streamlit
+  302  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/visualize_model.py
+  303  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_model.py
+  304  pip3 install torchvision
+  305  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_model.py
+  306  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_pipe.py
+  307  pip show spacy
+  308  pip3 install -U spacy==3.3.1
+  309  pip show spacy
+  310  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_pipe.py
+  311  pip3 install sapcy_transformers
+  312  pip3 install spacy_transformers
+  313  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_pipe.py
+  314  python -m spacy package models/output_roberta_7_ner packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/custom_functions.py
+  315  conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+  316  sudo docker ps
+  317  cd
+  318  cd a
+  319  cd Desktop/FastAPI_NER_Deployment/app/
+  320  sudo docker run -dp 5000:5000 fastapi:latest
+  321  sudo docker ps
+  322  sudo docker images
+  323  sudo docker pull 8d6084ddba62
+  324  sudo docker pull 48d
+  325  sudo docker service start
+  326  vi Dockerfile
+  327  sudo docker run -p 5000:5000 fastapi:latest .
+  328  docker build -t fastapi:latest .
+  329  vi Dockerfile
+  330  docker build -t fastapi:latest .
+  331  python -m pip install --upgrade pip
+  332  docker build -t fastapi:latest .
+  333  sudo docker run -p 5000:5000 fastapi:latest .
+  334  sudo docker run -dp 5000:5000 fastapi:latest
+  335  sudo docker ps
+  336  sudo docker images
+  337  vi Dockerfile
+  338  sudo docker run -p 5000:5000 fastapi:latest .
+  339  sudo docker run -dp 5000:5000 fastapi:latest
+  340  sudo docker run -dp 5000:5000 fastapi:latest .
+  341  python -m uvicorn main:app --reload
+  342  history
+  343  sudo docker build -t fastapi:latest ,
+  344  sudo docker build -t fastapi:latest
+  345  sudo docker build -t fastapi:latest .
+  346  sudo docker run -dp 5000:5000 fastapi:latest
+  347  sudo docker images
+  348  cd
+  349  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  350  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  351  sudo apt-get install chromium-browser
+  352  sudo apt --fix-broken install
+  353  sudo apt-get update
+  354  sudo apt-get install google-chrome-stable
+  355  google-chrome
+  356  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  357  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  358  sudo apt -f install
+  359  google-chrome
+  360  google-chrome --help
+  361  where is google-chrome
+  362  whereis google-chrome
+  363  google-chrome <a href="http://localhost:5000/">http://localhost:5000/</a>
+  364  google-chrome <a href="http://localhost:5000">http://localhost:5000</a>
+  365  google-chrome <a href="http://localhost:5000/">http://localhost:5000</a>
+  366  cd Desktop/
+  367  cd Fat
+  368  cd FastAPI_NER_Deployment/app/
+  369  sudo docker run -dp 5000:5000 fastapi:latest
+  370  history
+  371  sudo docker build -t fastapi:latest .
+  372  sudo docker images
+  373  history
+  374  google-chrome<a href="http://localhost:5000/">http://localhost:5000</a>
+  375  vi Dockerfile
+  376  ls
+  377  sudo docker run -dp 5000:5000 api:latest
+  378  sudo docker run -dp 5000:5000 fastapi:latest
+  379  sudo docker build -t fastapi-demo .
+  380  sudo docker run -dp 5000:5000 fastapi-demo
+  381  sudo docker ps
+  382  vi Dockerfile
+  383  sudo docker build -t fastapi-demo .
+  384  sudo docker ps
+  385  sudo docker images
+  386  docker ps
+  387  sudo docker ps
+  388  sudo docker service start
+  389  sudo docker service restart
+  390  sudo service docker start
+  391  sudo docker ps
+  392  sudo docker images
+  393  sudo docker pull f567e85942cd
+  394  sudo usermod -a -G docker ubuntu
+  395  docker infor
+  396  docker info
+  397  docker build -t fastapi-deploy-demo .
+  398  docker tag fastapi-deploy-demo:latest ubuntu.ec2-52-36-73-246.us-west-2.compute.amazonaws.com/fastapi-deploy-demo:latest
+  399  aws configure
+  400  sudo apt  install awscli
+  401  aws configure
+  402  clear
+  403  history
+  404  sudo docker build -t FastAPI:NER .
+  405  sudo docker build -t fastapi:NER .
+  406  sudo docker run -dp 5000:5000 fastapi:NER
+  407  sudo docker images
+  408  sudo docker ps
+  409  sudo docker ps-a
+  410  sudo docker ps -a
+  411  sudo docker start 55cc13b87a8c
+  412  sudo docker ps -a
+  413  sudo docker logs 55cc13b87a8c
+  414  vi Dockerfile
+  415  sudo docker build -t fastapi:NER .
+  416  sudo docker run -dp 5000:5000 fastapi:NER
+  417  sudo docker ps -a
+  418  sudo docker attach 08b4c36e8e26
+  419  sudo docker ps -a
+  420  sudo docker logs 08b4c36e8e26
+  421  vi main.py
+  422  python -m spacy validate
+  423  cd
+  424  cd Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/
+  425  ls
+  426  python -m spacy package models/output_roberta_7_ner/ packaged_models/
+  427  pip3 show spacy-transformers
+  428  pip3 show spacy_transformers
+  429  pip show spacy_transformers
+  430  pip install spacy_transformers
+  431  pip show spacy_transformers
+  432  python -m spacy package models/output_roberta_7_ner/ packaged_models
+  433  cd package
+  434  cd packaged_models/
+  435  ls
+  436  rm -r en_chia_ner_pipeline_trf-0.0.0/
+  437  ls
+  438  cd ..
+  439  cd models/
+  440  ls
+  441  cd ..
+  442  python -m spacy package models/output_roberta_7_ner/ packaged_models
+  443  cd package
+  444  cd packaged_models/
+  445  ls
+  446  cd ..
+  447  cd models/
+  448  ls
+  449  cd output_roberta_7_ner/
+  450  ls
+  451  cd ..
+  452  python3 -m spacy package models/output_roberta_7_ner packaged_models
+  453  pip3 show spacy
+  454  pip3 install -U spacy=3.3.1
+  455  pip3 install -U spacy==3.3.1
+  456  pip3 show spacy
+  457  pip3 install spacy_transformers
+  458  pip3 uninstall spacy_transformers
+  459  pip3 install spacy==3.3.1
+  460  pip3 install -U spacy_transformers
+  461  vi requirements.txt
+  462  pip3 install spacy==3.1.3
+  463  pip3 install -U spacy_transformers==1.1.7
+  464  pip3 show spacy
+  465  python3 -m spacy package models/output_roberta_7_ner packaged_models
+  466  pip3 install spacy==3.3.1
+  467  python3 -m spacy package models/output_roberta_7_ner packaged_models
+  468  python -m spacy validate
+  469  ls
+  470  cd package
+  471  cd packaged_models/
+  472  clear
+  473  ls
+  474  rm -r packaged_models/
+  475  ls
+  476  cd dist/
+  477  ls
+  478  cd ..
+  479  mkdir en_chia_ner_pipeline_trf-0.0.0
+  480  ls
+  481  mv dist/ en_chia_ner_pipeline_trf-0.0.0/
+  482  ls
+  483  cd en_chia_ner_pipeline_trf-0.0.0/
+  484  ls
+  485  python3 setup.py sdist
+  486  ls
+  487  c dist/
+  488  cd dist/
+  489  ls
+  490  python -m pip install en_chia_ner_pipeline_trf-0.0.0.tar.gz
+  491  python3 -m spacy validate
+  492  cd ..
+  493  ls
+  494  cd /
+  495  cd /home/ubuntu/Desktop/FastAPI_NER_Deployment/app/
+  496  vi main.py
+  497  cd /
+  498  ls
+  499  cd /home/ubuntu/
+  500  ls
+  501  cd Desktop/
+  502  ls
+  503  cd FastAPI_NER_Deployment/
+  504  cd app/
+  505  ls
+  506  vi Dockerfile
+  507  vi requirements.txt
+  508  pwd
+  509  vi Dockerfile
+  510  cp /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/packaged_models/en_chia_ner_pipeline_trf-0.0.0/dist/en_chia_ner_pipeline_trf-0.0.0.tar.gz  /home/ubuntu/Desktop/FastAPI_NER_Deployment/app/
+  511  df -h
+  512  ls
+  513  cd ner_pytorch_medical/packaged_models/en_chia_ner_pipeline_trf-0.0.0/dist/
+  514  ls
+  515  cd ..
+  516  cd app
+  517  vi Dockerfile
+  518  history
+  519  vi Dockerfile
+  520  nano Dockerfile
+  521  vim Dockerfile
+  522  history
+  523  sudo docker build -t fastapi:NER1 .
+  524  python3 -m spacy validate
+  525  pip3 show spacy
+  526  pip3 freeze > requirements.txt
+  527  ls
+  528  rm -r q!
+  529  ls
+  530  cat requirements.txt
+  531  sudo docker build -t fastapi:NER1 .
+  532  cat requirements.txt
+  533  rm -r requirements.txt
+  534  vi requirements.txt
+  535  cat requirements.txt
+  536  sudo docker build -t fastapi:NER1 .
+  537  vi requirements.txt
+  538  vi Dockerfile
+  539  cat Dockerfile
+  540  sudo docker build -t fastapi:NER1 .
+  541  free -h
+  542  df -h
+  543  history
+  544  cd Desktop/FastAPI_NER_Deployment/app/
+  545  ls
+  546  vi Dockerfile
+  547  history
+  548  sudo docker ps -a
+  549  docker images -a
+  550  sudo docker system prune
+  551  docker images -a
+  552  sudo docker ps -a
+  553  sudo docker images -a
+  554  clear
+  555  history
+  556  cat Dockerfile
+  557  sudo docker ps -a
+  558  sudo docker images
+  559  sudo docker run -dp 5000:5000 fastapi:NER1
+  560  history
+  561  sudo docker ps -a
+  562  sudo docker logs 94308b96903e
+  563  sudo docker ps -a
+  564  docker stop 94308b96903e
+  565  sudo docker ps -a
+  566  clear
+  567  cat Dockerfile
+  568  vim Dockerfile
+  569  sudo docker ps -a
+  570  df -h
+  571  hisotry
+  572  sudo docker build -t fastapi:NER_Deploy
+  573  sudo docker build -t fastapi:NER_Deploy .
+  574  sudo docker run -dp 5000:5000 fastapi:NER_Deploy
+  575  sudo docker ps -a
+  576  sudo docker logs 08eb18beb8dc
+  577  sudo docker ps -a
+  578  sudo docker start 08eb18beb8dc
+  579  sudo docker ps -a
+  580  sudo docker logs 08eb18beb8dc
+  581  history
+  582  sudo docker ps -a
+  583  sudo docker logs 08eb18beb8dc
+  584  sudo docker logs fastapi:NER_Deploy
+  585  sudo docker logs dreamy_cerf
+  586  sudo docker run  fastapi:NER_Deploy
+  587  sudo docker run fastapi:NER_Deploy
+  588  sudo docker images
+  589  sudo docker ps -a
+  590  sudo docker logs 2cfa0eed536f
+  591  sudo docker service logs 2cfa0eed536f
+  592  docker logs --details
+  593  docker logs --details
+  594  docker logs --details 08eb18beb8dc
+  595  vi Dockerfile
+  596  cat Dockerfile
+  597  sudo docker images
+  598  sudo docker build -t fastapi:NER1
+  599  sudo docker build -t fastapi:NER1 .
+  600  sudo docker run -dp 5000:5000 fastapi:NER1
+  601  sudo docker ps -a
+  602  sudo docker logs 7ae31327ff43
+  603  vi Dockerfile
+  604  sudo docker build -t fastapi:NER1 .
+  605  sudo docker ps -a
+  606  sudo docker stop 7ae31327ff43
+  607  sudo docker ps -a
+  608  sudo docker run -d --name my_container -p 80:80 402462b553b7
+  609  sudo docker ps -a
+  610  curl 0.0.0.0:80
+  611  sudo docker ps -a
+  612  cat Dockerfile
+  613  sudo docker stop my_container
+  614  sudo docker ps -a
+  615  sudo docker prune system
+  616  history
+  617  sudo docker system prune
+  618  sudo docker build -t fastapi:NER .
+  619  history
+  620  sudo docker run -d --name my_container -p 80:80
+  621  sudo docker run -d --name my_container -p 80:80 ef02686070d4
+  622  sudo docker ps -a
+  623  sudo docker logs
+  624  sudo docker inspect ef02 | grep IPAddress
+  625  sudo docker inspect ef02686070d4 | grep IPAddress
+  626  sudo docker ps -q
+  627  cat Dockerfile
+  628  sudo docker stop ef02686070d4
+  629  sudo docker stop my_container
+  630  sudo docker ps 0a
+  631  sudo docker ps -a
+  632  clear
+  633  history
+  634  sudo docker run -d --name my_container -p 5000:5000 ef02686070d4
+  635  sudo docker start my_container
+  636  sudo docker start ps -a
+  637  sudo docker ps -a
+  638  sudo docker run -d --name my_container -p 5000:5000 ef02686070d4
+  639  sudo docker stop my_container
+  640  sudo docker run -d --name fastapi_container -p 5000:5000 ef02686070d4
+  641  sudo docker ps -a
+  642  sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' 8ccd
+  643  curl 172.17.02
+  644  curl 172.17.0.2:5000
+  645  curl 172.17.0.2:5000/tcp
+  646  curl 0.0.0.0:5000/tcp
+  647  sudo apt install nginx
+  648  sudo vi /etc/
+  649  sudo vi /etc/nginx/sites-enabled/fastapi
+  650  sudo service nginx restart
+  651  sudo service nginx start
+  652  systemctl status nginx.service
+  653  nginx -t -c  /etc/nginx/sites-enabled/fastapi
+  654  sudo nginx -t -c  /etc/nginx/sites-enabled/fastapi
+  655  sudo vi /etc/nginx/sites-enabled/fastapi
+  656  sudo nginx -t -c  /etc/nginx/sites-enabled/fastapi
+  657  sudo service nginx restart
+  658  sudo docker ps -a
+  659  sudo docker stop fastapi_container
+  660  sudo docker ps -a
+  661  history
+  662  sudo docker run -d --name fastapi_container -p 80:80 ef02686070d4
+  663  sudo docker run -d --name fastapi_ner_container -p 80:80 ef02686070d4
+  664  sudo docker run -d --name fastapi_ner_container -p 81:81 ef02686070d4
+  665  sudo docker run -d --name fastapi_ner_container ef02686070d4
+  666  sudo docker run -d --name fastapi_ner_container1 ef02686070d4
+  667  sudo docker ps -a
+  668  sudo service nginx restart
+  669  sudo nginx -t -c /etc/nginx/sites-enabled/fastapi
+  670  sudo systemctl reload nginx
+  671  sudo nginx -t -c /etc/nginx/sites-enabled/fastapi
+  672  sudo nginx -t
+  673  sudo nginx -t -c
+  674  sudo nginx -t -c /etc/nginx/sites-enabled/fastapi
+  675  vi /etc/nginx/sites-enabled/fastapi
+  676  history
+  677  docker ps -a
+  678  docker logs api
+  679  curl localhost:5000
+  680  nano main.py
+  681  vi Dockerfile
+  682  curl localhost:5000
+  683  curl 172.17.0.2:5000
+  684  clear
+  685  docker ps -a
+  686  docker ps
+  687  curl 172.17.0.2:5000
+  688  history
+  689  sudo docker ps -a
+  690  sudo docker run sudo docker run -d --namesudo docker run -d --name
+  691  history
+  692  sudo docker ps -a
+  693  curl 172.17.0.2:5000
+  694  cd Desktop/FastAPI_NER_Deployment/app/
+  695  vi Dockerfile
+  696  df -h
+  697  python3 --version
+  698  vi Dockerfile
+  699  exit
+  700  ls
+  701  cd Desktop
+  702  ls
+  703  cd FastAPI_NER_Deployment/
+  704  ls
+  705  cd app
+  706  ls
+  707  history
+  708  nano Dockerfile
+  709  sudo docker run -d --name fastapi_container -p 8000:8000 0a2013fec075
+  710  docker ps -a
+  711  curl localhost:8000/docs
+  712  curl localhost:8000
+  713  logs fastapi_container
+  714  docker logs fastapi_container
+  715  docker ps -a
+  716  docker rm -f fastapi_container
+  717  nano Dockerfile
+  718  sudo docker build -t fastapi:NER .
+  719  sudo docker run -d --name api -p 8000:8000 9898224ad6b1
+  720  docker ps -a
+  721  docker logs api
+  722  ls
+  723  conda info --envs
+  724  docker exec -it 56bb2587190d /bin/bash
+  725  nano Dockerfile
+  726  docker images
+  727  nano main.py
+  728  conda info --envs
+  729  conda activate fastapi
+  730  uvicorn main:app --reload
+  731  docker stop api
+  732  uvicorn main:app --reload
+  733  ls
+  734  cd Desktop
+  735  ls
+  736  cd FastAPI_NER_Deployment
+  737  ls
+  738  cd app
+  739  ls
+  740  sudo docker ps -a
+  741  curl -s localhost:5000
+  742  curl localhost:5000
+  743  curl localhost:8000
+  744  curl localhost:5000
+  745  curl localhost:80
+  746  sudo systemctl stop nginx
+  747  curl localhost:5000
+  748  docker stop dccba223566c
+  749  docker ps -a
+  750  docker stop 019b55202a69
+  751  docker start 8ccd9dc59fc8
+  752  docker ps -a
+  753  curl localhost:5000
+  754  curl -s localhost:5000
+  755  sudo vi /etc/nginx/sites-enabled/fastapi_app
+  756  sudo ls /etc/nginx/sites-enabled/fastapi_app
+  757  sudo ls /etc/nginx/sites-enabled/
+  758  sudo ls /etc/nginx/sites-enabled/default
+  759  sudo nano /etc/nginx/sites-enabled/default
+  760  sudo nano /etc/nginx/sites-enabled/fastapi
+  761  sudo service nginx restart
+  762  sudo systemctl status nginx
+  763  sudo service nginx stop
+  764  sudo systemctl status nginx
+  765  sudo nano /etc/nginx/sites-enabled/fastapi
+  766  sudo service nginx restart
+  767  sudo service nginx status
+  768  curl localhost:5000
+  769  curl localhost:5000/ner
+  770  sudo service nginx status
+  771  docker ps -a
+  772  ls
+  773  nano main.py
+  774  docker logs 8ccd9dc59fc8
+  775  ls
+  776  nano Dockerfile
+  777  docker stop fastapi_container
+  778  sudo service nginx stop
+  779  sudo docker build -t fastapi:NER_app .
+  780  docker run -d --name api 4d5f46d2a25d
+  781  docker ps -a
+  782  docker logs 2495eb23354d
+  783  curl localhost:5000
+  784  docker logs 2495eb23354d
+  785  curl localhost:80
+  786  docker logs 2495eb23354d
+  787  ls
+  788  curl localhost:5000
+  789  docker stop api
+  790  docker rm -f api
+  791  docker ps -a
+  792  docker run -d --name api -p 80:80 4d5f46d2a25d
+  793  docker ps -a
+  794  docker logs api
+  795  curl localhost:80
+  796  docker logs api
+  797  curl localhost:5000
+  798  docker stop api
+  799  docker rm -f api
+  800  docker run -d --name api -p 80:5000 4d5f46d2a25d
+  801  docker ps -a
+  802  curl localhost:5000
+  803  curl localhost:80
+  804  docker stop api
+  805  docker rm -f api
+  806  docker run -d --name api -p 5000:5000 4d5f46d2a25d
+  807  docker ps -a
+  808  curl localhost:5000
+  809  docker logs api
+  810  nano app.py
+  811  ls
+  812  nano main.py
+  813  curl localhost:5000/tcp
+  814  curl localhost:5000/ner
+  815  curl localhost
+  816  localhost
+  817  curl 127.0.0.2/
+  818  curl 172.17.0.2
+  819  curl 172.17.0.2:5000
+  820  docker rm -f fastapi_ner_container1
+  821  docker rm -f fastapi_ner_container
+  822  docker rm -f fastapi_container
+  823  docker rm -f my_container
+  824  docker logs api
+  825  curl localhost:5000
+  826  nano main.py
+  827  docker ps -a
+  828  curl localhost:5000
+  829  curl 172.17.0.2:5000
+  830  docker stop api
+  831  docker rm -f api
+  832  docker run -d --name api -p 5000:5000 4d5f46d2a25d --public
+  833  docker pas -a
+  834  docker ps -a
+  835  docker rm -f api
+  836  docker run -d --name api -p 5000:5000,172.17.0.2:5000:5000 4d5f46d2a25d
+  837  docker run -d --name api -p 5000:5000,172.17.0.2:5000 4d5f46d2a25d
+  838  docker run -d --name api -p 5000:5000,172.17.0.2 4d5f46d2a25d
+  839  docker run -d --name api -p 5000:5000 4d5f46d2a25d
+  840  docker ps -a
+  841  curl 172.17.0.2:5000
+  842  docker inspect --format '{{ .NetworkSettings.IPAddress }}' 0527
+  843  curl 172.17.0.2:80
+  844  curl localhost:5000
+  845  nano main.py
+  846  docker stop api
+  847  docker rm -f api
+  848  nano Dockerfile
+  849  history
+  850  sudo docker build -t fastapi:NER .
+  851  docker run -d --name api -p 5000:5000 5a867e140ed1
+  852  docker ps -a
+  853  curl localhost:5000
+  854  curl 172.17.0.2:5000
+  855  docker logs api
+  856  curl localhost:5000
+  857  ls
+  858  docker stop api
+  859  docker rm -f api
+  860  docker run -d --name api -p 5000:8000 5a867e140ed1
+  861  docker logs api
+  862  curl localhost:8000
+  863  docker ps -a
+  864  curl 127.0.0.1
+  865  curl 127.0.0.1:8000
+  866  curl 172.17.0.2:8000
+  867  curl 172.17.0.2:5000
+  868  nano Dockerfile
+  869  docker stop api
+  870  docker rm -f api
+  871  sudo docker build -t fastapi:NER .
+  872  ps aux
+  873  htop
+  874  conda activate fastapi
+  875  ls
+  876  cd Desktop/
+  877  ls
+  878  cd FastAPI_NER_Deployment/
+  879  ls
+  880  cd app
+  881  ls
+  882  nano main.py
+  883  python main.py
+  884  uvicorn main:app --host 0.0.0.0 --port 8000
+  885  docker ps -a
+  886  docker rm -f api
+  887  sudo docker build -t fastapi:NER .
+  888  sudo docker run -d --name api -p 8000:8000 ba775f82d162
+  889  docker ps -a
+  890  docker logs api
+  891  curl localhost:8000
+  892  cd Desktop/
+  893  ls
+  894  cd FastAPI_NER_Deployment/
+  895  ls
+  896  cd app/
+  897  ls
+  898  vi Dockerfile
+  899  df -h
+  900  vi main.py
+  901  cd ..
+  902  cd ner_pytorch_medical/packaged_models/
+  903  ls
+  904  history
+  905  docker rm -f containerid or container_name
+
+

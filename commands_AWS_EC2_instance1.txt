@@ -1,0 +1,270 @@
+    1  ls
+    2  mkdir Desktop
+    3  ls
+    4  cd Desktop/
+    5  ls
+    6  sudo apt-get update
+    7  sudo apt-get install curl
+    8  curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+    9  cd Desktop/
+   10  cd /tmp/
+   11  curl -O https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+   12  bash Anaconda3-2020.07-Linux-x86_64.sh
+   13  conda init
+   14  bash Anaconda3-2020.07-Linux-x86_64.sh
+   15  ls
+   16  cd
+   17  cd /home/ubuntu/
+   18  ls
+   19  rn -r anaconda3/
+   20  rm -r anaconda3/
+   21  bash Anaconda3-2020.07-Linux-x86_64.sh
+   22  cd /tmp/
+   23  bash Anaconda3-2020.07-Linux-x86_64.sh
+   24  conda config --set auto_activate_basetrue
+   25  conda config --set auto_activate_base true
+   26  conda initi
+   27  conda init
+   28  cd
+   29  cd /home/ubuntu/anaconda3/
+   30  conda init
+   31  source ~/.bashrc
+   32
+   33  conda list
+   34  conda config --set auto_activate_base True
+   35  bash Anaconda3-2020.07-Linux-x86_64.sh
+   36  cd /tmp/
+   37  bash Anaconda3-2020.07-Linux-x86_64.sh
+   38  cd /home/ubuntu/
+   39  ls
+   40  rm -r anaconda3/
+   41  cd Desktop/
+   42  bash Anaconda3-2020.07-Linux-x86_64.sh
+   43  cd /tmp/
+   44  bash Anaconda3-2020.07-Linux-x86_64.sh
+   45  cd /home/ubuntu/anaconda3/
+   46  ls
+   47  conda init
+   48  cd /tmp/
+   49  ls
+   50  source ~/.bashrc
+   51  conda list
+   52  conda --version
+   53  sha256sum Anaconda3-2020.07-Linux-x86_64.sh
+   54  bash Anaconda3-2020.07-Linux-x86_64.sh
+   55  conda init
+   56  cd /home/ubuntu/anaconda3/
+   57  conda init
+   58  anaconda init
+   59  cd
+   60  cd /tmp/
+   61  ls
+   62  cd /home/ubuntu/
+   63  ls
+   64  rm -r anaconda3/
+   65  pwd
+   66  wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+   67  sha256sum /tmp/Anaconda3-2020.02-Linux-x86_64.sh
+   68  bash /tmp/Anaconda3-2020.02-Linux-x86_64.sh
+   69  conda init
+   70  cd /home/ubuntu/
+   71  ls
+   72  rm -r anaconda3/
+   73  bash /tmp/Anaconda3-2020.02-Linux-x86_64.sh
+   74  cd /home/ubuntu/anaconda3/bin/
+   75  ls
+   76  conda init
+   77  conda config --set auto_activate_base false\
+   78  conda config --set auto_activate_base true
+   79  cd
+   80  cd /home/ubuntu/
+   81  rm -r anaconda3/
+   82  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   83  chmod +x Miniconda3-latest-Linux-x86_64.sh
+   84  ./Miniconda3-latest-Linux-x86_64.sh
+   85  cd /home/ubuntu/
+   86  rm -r miniconda3/
+   87  ./Miniconda3-latest-Linux-x86_64.sh
+   88  conda iniit
+   89  conda init
+   90  exit
+   91  conda init
+   92  cond create --name fastapi
+   93  conda create --name fastapi
+   94  conda activate fastapi
+   95  cd Desktop/FastAPI_NER_Deployment/app/
+   96  python --version
+   97  python3 --version
+   98  conda install -c anaconda python=3.8
+   99  pip3 install -r requirements.txt
+  100  ls
+  101  cd ..
+  102  cd ner_pytorch_medical/
+  103  ls
+  104  pip3 install -r requirements.txt
+  105  cd models/
+  106  ls
+  107  cd output_roberta_7_ner/
+  108  pwd
+  109  cd ..
+  110  cd app/
+  111  ls
+  112  vi main.py
+  113  cd ..
+  114  cd
+  115  ls
+  116  vi Dockerfile
+  117  touch Dockerfile
+  118  pip freeze > requirements.txt
+  119  sudo yum install -y docker
+  120  sudo apt install -y docker
+  121  df -h
+  122  free -h
+  123  sudo groupadd docker
+  124  sudo service docker restart
+  125  sudo service docker start
+  126  docker build -t fastapi-demo .
+  127  sudo apt  install docker.io
+  128  docker build -t fastapi-demo .
+  129  docker build -t fastapi:latest .
+  130  history
+  131  history > commands.txt
+  132  ls
+  133  mv commands.txt /home/ubuntu/D
+  134  mv commands.txt /home/ubuntu/Desktop/FastAPI_NER_Deployment/
+  135  ls
+  136  cd /home/ubuntu/
+  137  ls
+  138  cd D
+  139  rm -r D
+  140  ls
+  141  pwd
+  142  history > commands.txt
+  143  mv commands.txt /home/ubuntu/Desktop/
+  144  docker build -t fastapi:latest .
+  145  sudo service docker start
+  146  docker build -t fastapi:latest .
+  147  sudo usermod -aG docker $ubuntu
+  148  sudo usermod -aG docker ubuntu
+  149  docker build -t fastapi:latest .
+  150  sudo usermod -aG docker $USER
+  151  sudo service docker start
+  152  sudo service docker restart
+  153  docker build -t fastapi:latest .
+  154  sudo systemctl restart docker
+  155  docker ps
+  156  sudo chmod 666 /var/run/docker.sock
+  157  docker ps
+  158  sudo systemctl restart docker
+  159  docker ps
+  160  sudo service docker restart
+  161  sudo service docker start
+  162  docker build -t fastapi:latest .
+  163  history
+  163  history
+  164  sudo service docker restart
+  165  /
+  166  sudo service docker restart
+  167  docker build -t fastapi:latest .
+  168  sudo usermod -a -G docker $USER
+  169  docker build -t fastapi:latest .
+  170  sudo systemctl restart docker
+  171  sudo apt install -y docker
+  172  sudo usermod -a -G docker $USER
+  173  docker build -t fastapi:latest .
+  174  pwd
+  175  cd
+  176  pwd
+  177  cd Desktop/
+  178  docker build -t fastapi:latest .
+  179  cd
+  180  vi Dockerfile
+  181  docker build -t fastapi:latest .
+  182  vi Dockerfile
+  183  docker build -t fastapi:latest .
+  184  df -h
+  185  docker build -t fastapi:latest .
+  186  clear
+  187  docker build -t fastapi:latest .
+  188  docker ps
+  189  sudo docker ps
+  190  sudo docker build -t fastapi:latest .
+  191  pwd
+  192  cd Desktop/
+  193  cd FastAPI_NER_Deployment/
+  194  sudo docker build -t fastapi:latest .
+  195  ls
+  196  cd app/
+  197  ls
+  198  vim Dockerfile
+  199  ls
+  200  cat Dockerfile
+  201  sudo docker build -t fastapi:latest .
+  202  rm Dockerfile
+  203  cd ..
+  204  mv Dockerfile app/
+  205  cd app/
+  206  sudo docker build -t fastapi:latest .
+  207  docker run -p 5000:5000 api:latest
+  208  sudo docker run -p 5000:5000 fastapi:latest
+  209  exit
+  210  df -h
+  211  ls
+  212  vi Dockerfile
+  213  cd Desktop/FastAPI_NER_Deployment/app/
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd
+  218  mv Dockerfile /home/ubuntu/Desktop/FastAPI_NER_Deployment/
+  219  ls
+  220  cd Desktop/
+  221  cd FastAPI_NER_Deployment/
+  222  ls
+  223  cat Dockerfile
+  224  ls
+  225  cd app/
+  226  ls
+  227  cat Dockerfile
+  228  cat requirements.txt
+  229  cd ..
+  230  du -sh app/
+  231  exit
+  232  conda activate fastapi
+  233  history
+  234  sudo docker build -t fastapi:latest .
+  235  ls
+  236  cd /home/ubuntu/
+  237  ls
+  238  cd Desktop/FastAPI_NER_Deployment/
+  239  ls
+  240  cd app/
+  241  ls
+  242  sudo docker build -t fastapi:latest .
+  243  cd ..
+  244  cd ner_pytorch_medical/models/
+  245  ls
+  246  cd output_roberta_7_ner/
+  247  ls
+  248  cd ..
+  249  python -m spacy package models/output_roberta_7_ner/ packaged_models/
+  250  pip3 install spacy_transformers
+  251  python -m spacy package models/output_roberta_7_ner/ packaged_models/
+  252  python -m spacy package models/output_roberta_7_ner/ packaged_models --code /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/scripts/torch_ner_model.py
+  253  pip install torch
+  254  cd package
+  255  cd packaged_models/
+  256  ls
+  257  cd en_chia_ner_pipeline_trf-0.0.0/
+  258  ls
+  259  python setup.py sdist
+  260  ls
+  261  cd dist/
+  262  ls
+  263  python -m pip install en_chia_ner_pipeline_trf-0.0.0.tar.gz
+  264  cd ..
+  265  cd app/
+  266  history
+  267  sudo docker run -p 5000:5000 fastapi:latest
+  268  df -h
+  269  ls

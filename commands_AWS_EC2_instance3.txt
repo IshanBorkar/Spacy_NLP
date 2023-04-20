@@ -1,0 +1,498 @@
+    1  ls
+    2  mkdir Desk
+    3  mv Desk Desktop
+    4  ls
+    5  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    6  chmod +x Miniconda3-latest-Linux-x86_64.sh
+    7  ./Miniconda3-latest-Linux-x86_64.sh
+    8  exit
+    9  yes
+   10  ./Miniconda3-latest-Linux-x86_64.sh
+   11  cd /home/ubuntu/
+   12  ls
+   13  rm -r miniconda3/
+   14  ./Miniconda3-latest-Linux-x86_64.sh
+   15  conda init
+   16  rm -r miniconda3/
+   17  chmod +x Miniconda3-latest-Linux-x86_64.sh
+   18  ./Miniconda3-latest-Linux-x86_64.sh
+   19  logout
+   20  conda init
+   21  cd Desktop/
+   22  ls
+   23  python --version
+   24  python3 --version
+   25  conda init
+   26  cd /
+   27  cd /home/ubuntu/
+   28  rm -r Miniconda3-latest-Linux-x86_64.sh
+   29  ls
+   30  rm -r miniconda3/
+   31  ls
+   32  cd Desktop/
+   33  ls
+   34  cd ..
+   35  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   36  chmod +x Miniconda3-latest-Linux-x86_64.sh
+   37  ./Miniconda3-latest-Linux-x86_64.sh
+   38  rm -r miniconda3/
+   39  ls
+   40  ./Miniconda3-latest-Linux-x86_64.sh
+   41  rm -r miniconda3/
+   42  ./Miniconda3-latest-Linux-x86_64.sh
+   43  conda initi
+   44  conda init
+   45  exit
+   46  sudo apt install python3.8
+   47  sudo apt install python==3.8
+   48  sudo apt update
+   49  sudo apt install software-properties-common
+   50  sudo apt list --upgradable
+   51  sudo add-apt-repository ppa:deadsnakes/ppa
+   52  sudo apt install python3.8
+   53  python3.8 --version
+   54  python3 --version
+   55  conda init
+   56  rm -r miniconda3/
+   57  ./Miniconda3-latest-Linux-x86_64.sh
+   58  exit
+   59  conda install -c anaconda python=3.8
+   60  python3 --version
+   61  cd Desktop/FastAPI_NER_Deployment/
+   62  cd app/
+   63  ls
+   64  cd ..
+   65  cd ner_pytorch_medical/
+   66  cd packaged_models/en_chia_ner_pipeline_trf-0.0.0/
+   67  python3 setup.py sdist
+   68  ls
+   69  cd dist/
+   70  ls
+   71  python3 -m pip install en_chia_ner_pipeline_trf-0.0.0.tar.gz
+   72  cd ..
+   73  python3 -m spacy validate
+   74  cd ..
+   75  pip3 install -r requirements.txt
+   76  cd ..
+   77  cd app/
+   78  pip3 install -r requirements.txt
+   79  cd ..
+   80  cd ner_pytorch_medical/
+   81  \cd ..
+   82  cd app/
+   83  ls
+   84  sudo apt install -y docker
+   85  sudo groupadd docker
+   86  sudo service docker start
+   87  sudo service docker restart
+   88  sudo chmod 666 /var/run/docker.sock
+   89  sudo docker ps -a
+   90  docker ps -a
+   91  sudo snap install docker
+   92  sudo apt  install docker.io
+   93  conda info --envs
+   94  cd ..
+   95  cd ner_pytorch_medical/
+   96  pip3 install -r requirements.txt
+   97  conda update -n base conda
+   98  pip3 show anaconda-client
+   99  conda update --all
+  100  pip3 show anaconda-client
+  101  vi requirements.txt
+  102  pip3 install -r requirements.txt
+  103  vi requirements.txt
+  104  cd ./.
+  105  cd ..
+  106  cd app/
+  107  docker build -t fastapi_ner:latest .
+  108  sudo docker build -t fastapi_ner:latest .
+  109  ls
+  110  cp /home/ubuntu/Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/packaged_models/en_chia_ner_pipeline_trf-0.0.0/dist/en_chia_ner_pipeline_trf-0.0.0.tar.gz /home/ubuntu/Desktop/FastAPI_NER_Deployment/app/
+  111  ls
+  112  sudo docker build -t fastapi_ner:latest .
+  113  python3 -m pip install --upgrade pip
+  114  docker ps -a
+  115  sudo docker ps -a
+  116  sudo chmod 666 /var/run/docker.sock
+  117  docker ps -a
+  118  pip3 show spacy_transformers
+  119  docker run -d --name my_fastapi_container -p 8000:8000 08ead7b546da
+  120  sudo docker run -d --name my_fastapi_container -p 8000:8000 08ead7b546da
+  121  docker run -d --name my_fastapi_container -p 8000:8000 879a78075e7d
+  122  docker logs
+  123  df -h
+  124  sudo apt install nginx
+  125  conda create --name fastapi_ner
+  126  conda activate fastapi_ner
+  127  docker logs
+  128  dockerps -a
+  129  docker ps -a
+  130  python3 --version
+  131  history
+  132  sudo usermod -a -G docker ubuntu
+  133  aws configure
+  134  nano main.py
+  135  docker ps -a
+  136  history
+  137  docker run -d --name my_fastapi_container -p 8000:8000 879a78075e7d
+  138  docker logs
+  139  docker ps -a
+  140  vi Dockerfile
+  141  clear
+  142  docker ps -a
+  143  docker logs c2235b9dc109
+  144  df -h
+  145  htop
+  146  docker build -t fastapi_ner:latest .
+  147  docker ps -a
+  148  docker run -d --name ner -p 8000:8000 eed2423bf340
+  149  docker ps -a
+  150  docker logs ner
+  151  htop
+  152  curl localhost:8000
+  153  curl localhost:8000/ner
+  154  df -h
+  155  ls
+  156  rm -r FastAPI1.pem
+  157  ls
+  158  conda infor --envs
+  159  conda info --envs
+  160  conda activate fastapi_ner
+  161  cd Desktop/FastAPI_NER_Deployment/app/
+  162  history
+  163  docker ps -a
+  164  sudo docker build -t fastapi_ner:latest .
+  165  docker ps -a
+  166  history
+  167  docker run -d --name ner -p 8000:8000 e5bd0120766c
+  168  docker ps -a
+  169  docker logs
+  170  docker logs ner
+  171  curl localhost:8000
+  172  curl localhost:8000/ner
+  173  curl localhost:8000/fastapi_ner
+  174  curl localhost:8000
+  175  docker logs ner
+  176  docker ps -a
+  177  docker logs ffd5595c78b1
+  178  docker ps -a
+  179  curl localhost:8000
+  180  vi Dockerfile
+  181  history
+  182  curl localhost:800
+  183  history
+  184  vi Dockerfile
+  185  history
+  186  docker ps -a
+  187  curl localhost:8000
+  188  sudo nano /etc/nginx/sites-enabled/fastapi-demo
+  189  sudo nano /etc/nginx/sites-enabled/default
+  190  sudo nano /etc/nginx/sites-enabled/fastapi-demo
+  191  sudo service nginx restart
+  192  sudo service nginx start
+  193  systemctl status nginx.service
+  194  docker ps -a
+  195  docker stop ner
+  196  docker ps -a
+  197  sudo service nginx start
+  198  docker start ner
+  199  sudo service nginx stop
+  200  sudo nano /etc/nginx/sites-enabled/fastapi-demo
+  201  sudo service nginx start
+  202  docker start ner
+  203  docker logs nert
+  204  docker logs ner
+  205  conda inf --envs
+  206  conda info --envs
+  207  conda activate fastapi_ner
+  208  ls
+  209  cd Desktop/
+  210  ls
+  211  cd FastAPI_NER_Deployment/
+  212  ls
+  213  cd app/
+  214  ls
+  215  history
+ 216  vi docker-compose.yml
+  217  docker ps -a
+  218  docker run -d --name ner -p 8000:8000 e5bd0120766c
+  219  sudo docker run -d --name ner -p 8000:8000 e5bd0120766c
+  220  docker service start
+  221  docker service restart
+  222  docker run -d --name my_fastapi_container -p 8000:8000 879a78075e7d
+  223  docker build -t fastapi_ner:latest .
+  224  docker run -d --name ner -p 8000:8000 4712b71b916a
+  225  docker ps -a
+  226  docker rm -f ner
+  227  docker ps -a
+  228  docker run -d --name ner -p 8000:8000 4712b71b916a
+  229  docker ps -a
+  230  curl localhost:8000
+  231  history
+  232  docker logs ner
+  233  sudo service nginx start
+  234  docker start ner
+  235  docker ps -a
+  236  docker logs ner
+  237  docker start ner
+  238  docker ps -a
+  239  docker service start
+  240  docker service restart
+  241  sudo docker service restart
+  242  curl localhost:8000
+  243  docker logs ner
+  244  docker ps -a
+  245  history
+  246  systemctl status nginx.service
+  247  docker stop ner
+  248  sudo docker stop ner
+  249  docker ps -a
+  250  sudo service nginx start
+  251  docker logs ner
+  252  docker logs nert
+  253  sudo service nginx stop
+  254  docker logs nert
+  255  docker logs ner
+  256  docker ps -a
+  257  history
+  258  curl localhost:8000
+  259  history
+  260  curl localhost:8000/ner
+  261  curl localhost:8000
+  262  docker ps -a
+  263  sudo nano /etc/nginx/sites-enabled/fastapi-demo
+  264  sudo service nginx start
+  265  sudo nano /etc/nginx/sites-enabled/fastapi-demo
+  266  curl localhost:8000
+  267  history
+  268  docker logs ner
+  269  sudo service nginx stop
+  270  docker logs ner
+  271  docker ps -a
+  272  sudo service nginx restart
+  273  curl localhost:8000
+  274  history
+  275  docker logs ner
+  276  docker pd -a
+  277  docker ps -a
+  278  history
+  279  cd ..
+  280  ls
+  281  cd ..
+  282  cd FastAPI_NER_Deployment/app/
+  283  ls
+  284  docker ps -a
+  285  history
+  286  sudo nao /etc/nginx/sites-enabled/default
+  287  sudo nano /etc/nginx/sites-enabled/default
+  288  ls
+  289  vi Dockerfile
+  290  ls
+  291  rm - r docker-compose.yml
+  292  ls
+  293  cd ..
+  294  git push
+  295  git push <remote> --all
+  296  git push <FastAPI_NER_Deployment> --all
+  297  git push FastAPI_NER_Deployment --all
+  298  git push FastAPI_NER_Deployment --force
+  299  git push FastAPI_NER_Deployment --all
+  300  git init -b main
+  301  git add . && git commit -m "initial commit"
+  302  git remote add origin https://github.com/ish0205/FastAPI_NER.git
+  303  git remote -V
+  304  git remote -v
+  305  git push origin main
+  306  history
+  307  git push origin main
+  308  ssh-keygen -t ed25519 -C "ishan_borker@persistent.com"
+  309  git push origin main
+  310  history
+  311  git init -b main
+  312  git push origin main
+  313  git fetch origin master
+  314  git fetch origin main
+  315  git push origin main
+  316  git push origin main --force
+  317  git config --global http.version HTTP/2
+  318  git push origin main --force
+  319  git config --global http.version HTTP/1.1
+  320  git push origin main --force
+  321  history
+  322  git remote -v
+  323  git remote remove origin
+  324  git remote -v
+  325  clear
+  326  history
+  327  git init -b main
+  328  git remote add origin https://github.com/ish0205/FastAPI_NER.git
+  329  git remote -v
+  330  git push origin main
+  331  git remote -v
+  332  git push origin main
+  333  git remote remove origin
+  334  git remote -v
+  335  histpry
+  336  history
+  337  git init -b main
+  338  git remote -v
+  339  git re-init -b main
+  340  git init -b main
+  341  git add .
+  342  git commit -m "initial commit"
+  343  git remote add origin https://github.com/ish0205/FastAPI_NER.git
+  344  git remote -v
+  345  git fetch origin main
+  346  git push origin main
+  347  git push origin main --force
+  348  git config http.postBuffer 524288000
+  349  git push origin main --force
+  350  git status
+  351* git
+  352  git status
+  353  git commit -m "push code"
+  354  ls
+  355  cd ..
+  356  cd FastAPI_NER_Deployment/
+  357  ls
+  358  ls -a
+  359  git push origin
+  360  git push origin main
+  361  git pull
+  362  git pull main
+  363  git pull origin main
+  364  history
+  365  git pull origin main
+  366  cd ..
+  367  ls
+  368  cd ..
+  369  ls
+  370  mkdir git_repos
+  371  cd git_repos/
+  372  git clone git@github.com:ish0205/FastAPI_NER.git
+  373  git clone https://github.com/ish0205/FastAPI_NER.git
+  374  cd ..
+  375  ls
+  376  cd Desktop/
+  377  cd FastAPI_NER_Deployment/
+  378  ls
+  379  cd .
+  380  cd ..
+  381  ls
+  382  cd ..
+  383  ls
+  384  cd ubuntu/
+  385  cd git_repos/
+  386  ls
+  387  cp -r /home/ubuntu/Desktop/FastAPI_NER_Deployment/ FastAPI_NER/
+  388  cd FastAPI_NER/
+  389  ls
+  390  cd FastAPI_NER_Deployment/
+  391  ls
+  392  cd
+  393  cd Desktop/
+  394  cd FastAPI_NER_Deployment/
+  395  ls
+  396  vi FastAPI_NER_Deployment
+  397  rm -rf FastAPI_NER_Deployment
+  398  vi FastAPI_NER_Deployment.pub
+  399  rm -rf FastAPI_NER_Deployment.pub
+  400  ls
+  401  cd
+  402  cd /home/ubuntu/git_repos/
+  403  ls
+  404  cd FastAPI_NER/
+  405  ls
+  406  cd FastAPI_NER_Deployment/
+  407  ls
+  408  rm -rf FastAPI_NER_Deployment
+  409  rm -rf FastAPI_NER_Deployment.pub
+  410  ls
+  411  mv app ../
+  412  mv ner_pytorch_medical ../
+  413  cd ..
+  414  ls
+  415  rm -rf FastAPI_NER_Deployment/
+  416  ls
+  417  git add .
+  418  git status
+  419  git commit -m "code push"
+  420  git push origin
+  421  ls
+  422  cd ner_pytorch_medical/
+  423  ls
+  424  rm -rf Anaconda3-2020.02-Linux-x86_64.sh
+  425  git add .
+  426  git commit -m "code push"
+  427  git push origin
+  428  cd ..
+  429  ls
+  430  rm -rf ner_pytorch_medical/
+  431  git add .
+  432  git commit -m "First code push"
+  433  git remote -v
+  434  git status
+  435  git push origin
+  436  ls
+  437  mv app/ ../
+  438  cd ..
+  439  ls
+  440  rm -rf FastAPI_NER/
+  441  git clone https://github.com/ish0205/FastAPI_NER.git
+  442  mv app/ FastAPI_NER/
+  443  cd FastAPI_NER/
+  444  ls
+  445  git add .
+  446  git status
+  447  git commit -m "First commit"
+  448  git push origin
+  449  cd app/
+  450  ls
+  451  rm -rf en_chia_ner_pipeline_trf-0.0.0.tar.gz
+  452  git status
+  453  cd ..
+  454  git status
+  455  git commit -m "First commit"
+  456  git push origin
+  457  ls
+  458  cd app/
+  459  ls
+  460  cd ..
+  461  history
+  462  git add .
+  463  git status
+  464  git remote 0v
+  465  git remote -v
+  466  git push origin
+  467  git push origin --force
+  468  ls
+  469  rm -r app/
+  470  ls
+  471  cd ..
+  472  ls
+  473  rm -rf FastAPI_NER/
+  474  history
+  475  git clone https://github.com/ish0205/FastAPI_NER.git
+  476  ls
+  477  cd FastAPI_NER/
+  478  ls
+  479  cd ..
+  480  cp -r /home/ubuntu/Desktop/FastAPI_NER_Deployment/app/   /home/ubuntu/git_repos/FastAPI_NER/
+  481  ls
+  482  cd git_repos/FastAPI_NER/
+  483  LS
+  484  ls
+  485  du -sh app
+  486  cd app/
+  487  ls
+  488  rm en_chia_ner_pipeline_trf-0.0.0.tar.gz
+  489  cd ..
+  490  du -sh app
+  491  git add .
+  492  git commit -m "First commit"
+  493  git push origin
+  494  history
+  495  cd ..
+  496  cd Desktop/FastAPI_NER_Deployment/ner_pytorch_medical/
+  497  cd ..
+  498  du -sh ner_pytorch_medical/

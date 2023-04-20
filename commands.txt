@@ -1,0 +1,836 @@
+    1  wget http://hj-cmp.persistent.co.in:84/FreeBird_Trend_MSI/CPPortal/HJCPPortal.sh
+    2  chmod a+x HJCPPortal.sh
+    3  ./HJCPPortal.sh
+    4  ls
+    5  ./HJCPPortal.sh
+    6  ls
+    7  git clone https://github.com/explosion/projects.git
+    8  ls
+    9  rf -r projects/
+   10  rm -r projects/
+   11  rm -r projects
+   12  ls
+   13  conda create --name nlp_text_analytics
+   14  pip install conda
+   15  sudo apt install python-pip
+   16  sudo apt-get  install python-pip
+   17  apt-get  install python-pip
+   18  apt-get install python-pip
+   19  sudo apt-get install python-pip
+   20  sudo su
+   21  sudo apt-get install python-pip
+   22  sudo apt-get update
+   23  sudo apt-get install python-pip
+   24  conda create --name nlp_text_analytics
+   25  pip install conda
+   26  sudo apt-get install curl
+   27  curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+   28  ssh hj-corcto14131@10.53.96.234
+   29  ls
+   30  bash Anaconda3-2020.02-Linux-x86_64.sh
+   31  curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+   32  cd /tmp
+   33  curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+   34  lsb_release -a
+   35  sudo apt-get install openssh-server openssh-client
+   36  ifconfig
+   37  ls
+   38  cd Downloads/
+   39  ls
+   40  sha256sum Anaconda3-2022.05-Linux-x86_64.sh 
+   41  bash Anaconda3-2022.05-Linux-x86_64.sh 
+   42  ls
+   43  cd Downloads/
+   44  ls
+   45  bash Anaconda3-2022.05-Linux-x86_64.sh 
+   46  sudo restart
+   47  conda activate nlp_text_analytics
+   48  history
+   49  pip install gensim config --global http.sslVerify false
+   50  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+   51  cd Downloads/
+   52  ls
+   53  vi config
+   54  cd ..
+   55  python -m pip install --upgrade pip --user
+   56  python -m pip install --upgrade pip
+   57  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+   58  pip install numpy
+   59  python -m pip install pandas
+   60  python -m pip install -U pip setuptools wheel
+   61  python -m pip install -U spacy==3.1.3
+   62  python -m pip install spacy==3.1.3
+   63  pip install spacy
+   64  python -m pip show spacy
+   65  sudo add-apt-repository ppa:deadsnakes/ppa
+   66  conda install -c anaconda python=3.8
+   67  python --version
+   68  conda update --all
+   69  python --version
+   70  conda install -c anaconda python=3.8
+   71  conda deactivate
+   72  conda
+   73  conda env remove nlp_text_analytics
+   74  conda env remove --name  nlp_text_analytics
+   75  conda create -n py38 python=3.8
+   76  conda create -n nlp_text_analytics python=3.8
+   77  conda activate nlp_text_analytics
+   78  python --version
+   79  python -m pip install --upgrade pip
+   80  cd Downloads/
+   81  vi con
+   82  ls
+   83  vi config 
+   84  login as: ishan_borker
+   85  Keyboard-interactive authentication prompts from server:
+   86  | Password:
+   87  End of keyboard-interactive prompts from server
+   88  Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-142-generic x86_64)
+   89  187 updates can be applied immediately.
+   90  143 of these updates are standard security updates.
+   91  To see these additional updates run: apt list --upgradable
+   92  Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your                                                                              Internet connection or proxy settings
+   93  *** System restart required ***
+   94  Last login: Thu May 12 15:28:20 2022 from 10.37.2.98
+   95  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda activate nlp_text_a                                                                             nalytics
+   96  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ history
+   97  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ pip install                                                                              gensim config --global http.sslVerify false
+   98  /usr/lib/python2.7/dist-packages/pip/commands/install.py:212: UserWarning: Disab                                                                             ling all use of wheels due to the use of --build-options / --global-options / --                                                                             install-options.
+   99  Collecting gensim
+  100  No matching distribution found for gensim
+  101  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ pip install                                                                              --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pyt                                                                             honhosted.org pip setuptools
+  102  Collecting pip
+  103  Collecting setuptools
+  104  Installing collected packages: pip, setuptools
+  105  Successfully installed pip-20.3.4 setuptools-44.1.1
+  106  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ cd Download                                                                             s/
+  107  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~/Downloads$ l                                                                             s
+  108  Anaconda3-2022.05-Linux-x86_64.sh  conda
+  109  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~/Downloads$ v                                                                             i config
+  110  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~/Downloads$ c                                                                             d ..
+  111  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python -m pip install --upgrade pip --user
+  
+  132  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ curl https:                                                                             //bootstrap.pypa.io/get-pip.py -o get-pip.py
+  133  curl: (60) SSL certificate problem: self signed certificate in certificate chain
+  134  More details here: https://curl.haxx.se/docs/sslcerts.html
+  135  curl failed to verify the legitimacy of the server and therefore could not
+  136  establish a secure connection to it. To learn more about this situation and
+  137  how to fix it, please visit the web page mentioned above.
+  138  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ pip install                                                                              numpy
+  139  WARNING: pip is being invoked by an old script wrapper. This will fail in a futu                                                                             re version of pip.
+  140  Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the unde                                                                             rlying issue.
+  141  To avoid this problem you can invoke Python with '-m pip' instead of running pip                                                                              directly.
+  142  DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please                                                                              upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop s                                                                             upport for Python 2.7 in January 2021. More details about Python 2 support in pi                                                                             p can be found at https://pip.pypa.io/en/latest/development/release-process/#pyt                                                                             hon-2-support pip 21.0 will remove support for this functionality.
+  143  Defaulting to user installation because normal site-packages is not writeable
+  144  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status                                                                             =None)) after connection broken by 'SSLError(SSLError(1, u'[SSL: CERTIFICATE_VER                                                                             IFY_FAILED] certificate verify failed (_ssl.c:727)'),)': /simple/numpy/
+  145  Collecting numpy
+  146  Installing collected packages: numpy
+  147  Successfully installed numpy-1.16.6
+  148  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python -m p                                                                             ip install pandas
+  149  DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please                                                                              upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop s                                                                             upport for Python 2.7 in January 2021. More details about Python 2 support in pi                                                                             p can be found at https://pip.pypa.io/en/latest/development/release-process/#pyt                                                                             hon-2-support pip 21.0 will remove support for this functionality.
+  150  Defaulting to user installation because normal site-packages is not writeable
+  151  Collecting pandas
+  152  Requirement already satisfied: numpy>=1.12.0 in ./.local/lib/python2.7/site-pack                                                                             ages (from pandas) (1.16.6)
+  153  Collecting python-dateutil>=2.5.0
+  154  Collecting pytz>=2011k
+  155  Requirement already satisfied: six>=1.5 in /usr/lib/python2.7/dist-packages (fro                                                                             m python-dateutil>=2.5.0->pandas) (1.11.0)
+  156  Installing collected packages: python-dateutil, pytz, pandas
+  157  Successfully installed pandas-0.24.2 python-dateutil-2.8.2 pytz-2022.1
+  158  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python -m p                                                                             ip install -U pip setuptools wheel
+  159  DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please                                                                              upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop s                                                                             upport for Python 2.7 in January 2021. More details about Python 2 support in pi                                                                             p can be found at https://pip.pypa.io/en/latest/development/release-process/#pyt                                                                             hon-2-support pip 21.0 will remove support for this functionality.
+  160  Defaulting to user installation because normal site-packages is not writeable
+  161  Requirement already up-to-date: pip in ./.local/lib/python2.7/site-packages (20.                                                                             3.4)
+  162  Requirement already up-to-date: setuptools in ./.local/lib/python2.7/site-packag                                                                             es (44.1.1)
+  163  Collecting wheel
+  164  Installing collected packages: wheel
+  165  Successfully installed wheel-0.37.1
+  166  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python -m p                                                                             ip install -U spacy==3.1.3
+  167  DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please                                                                              upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop s                                                                             upport for Python 2.7 in January 2021. More details about Python 2 support in pi                                                                             p can be found at https://pip.pypa.io/en/latest/development/release-process/#pyt                                                                             hon-2-support pip 21.0 will remove support for this functionality.
+  168  Defaulting to user installation because normal site-packages is not writeable
+  169  ERROR: Could not find a version that satisfies the requirement spacy==3.1.3 (fro                                                                             m versions: 0.31, 0.32, 0.33, 0.40, 0.51, 0.52, 0.60, 0.61, 0.62, 0.63, 0.64, 0.                                                                             65, 0.67, 0.68, 0.70, 0.80, 0.81, 0.82, 0.83, 0.84, 0.85, 0.86, 0.87, 0.88, 0.89                                                                             , 0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.97, 0.98, 0.99, 0.100.0, 0.100.1, 0.100.                                                                             2, 0.100.3, 0.100.4, 0.100.5, 0.100.6, 0.100.7, 0.101.0, 1.0.1, 1.0.2, 1.0.3, 1.                                                                             0.4, 1.0.5, 1.1.0, 1.1.1, 1.1.2, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.5.1, 1.6.0, 1.7.0                                                                             , 1.7.1, 1.7.2, 1.7.3, 1.7.5, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.10.0, 1.10.1, 2.0.0,                                                                              2.0.1.dev0, 2.0.1, 2.0.2.dev0, 2.0.2, 2.0.3.dev0, 2.0.3, 2.0.4.dev0, 2.0.4, 2.0                                                                             .5.dev0, 2.0.5, 2.0.6.dev0, 2.0.6, 2.0.7, 2.0.8, 2.0.9, 2.0.10.dev0, 2.0.10, 2.0                                                                             .11.dev0, 2.0.11, 2.0.12.dev0, 2.0.12.dev1, 2.0.12, 2.0.13.dev0, 2.0.13.dev1, 2.                                                                             0.13.dev2, 2.0.13.dev4, 2.0.13, 2.0.14.dev0, 2.0.14.dev1, 2.0.15, 2.0.16.dev0, 2                                                                             .0.16, 2.0.17.dev0, 2.0.17.dev1, 2.0.17, 2.0.18.dev0, 2.0.18.dev1, 2.0.18, 2.1.0                                                                             , 2.1.1.dev0, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5, 2.1.6, 2.1.7.dev0, 2.1.7, 2.1.8                                                                             , 2.1.9, 2.2.0.dev10, 2.2.0.dev11, 2.2.0.dev13, 2.2.0.dev15, 2.2.0.dev17, 2.2.0.                                                                             dev18, 2.2.0.dev19, 2.2.0, 2.2.1, 2.2.2.dev0, 2.2.2.dev3, 2.2.2.dev4, 2.2.2, 2.2                                                                             .3.dev0, 2.2.3, 2.2.4, 2.3.0.dev1, 2.3.0, 2.3.1, 2.3.2, 2.3.3.dev0, 2.3.3, 2.3.4                                                                             , 2.3.5, 2.3.6, 2.3.7)
+  170  ERROR: No matching distribution found for spacy==3.1.3
+  171  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python -m p                                                                             ip install spacy==3.1.3
+  172  DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please                                                                              upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop s                                                                             upport for Python 2.7 in January 2021. More details about Python 2 support in pi                                                                             p can be found at https://pip.pypa.io/en/latest/development/release-process/#pyt                                                                             hon-2-support pip 21.0 will remove support for this functionality.
+  173  Defaulting to user installation because normal site-packages is not writeable
+  174  ERROR: Could not find a version that satisfies the requirement spacy==3.1.3 (fro                                                                             m versions: 0.31, 0.32, 0.33, 0.40, 0.51, 0.52, 0.60, 0.61, 0.62, 0.63, 0.64, 0.                                                                             65, 0.67, 0.68, 0.70, 0.80, 0.81, 0.82, 0.83, 0.84, 0.85, 0.86, 0.87, 0.88, 0.89                                                                             , 0.90, 0.91, 0.92, 0.93, 0.94, 0.95, 0.97, 0.98, 0.99, 0.100.0, 0.100.1, 0.100.                                                                             2, 0.100.3, 0.100.4, 0.100.5, 0.100.6, 0.100.7, 0.101.0, 1.0.1, 1.0.2, 1.0.3, 1.                                                                             0.4, 1.0.5, 1.1.0, 1.1.1, 1.1.2, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.5.1, 1.6.0, 1.7.0                                                                             , 1.7.1, 1.7.2, 1.7.3, 1.7.5, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.10.0, 1.10.1, 2.0.0,                                                                              2.0.1.dev0, 2.0.1, 2.0.2.dev0, 2.0.2, 2.0.3.dev0, 2.0.3, 2.0.4.dev0, 2.0.4, 2.0                                                                             .5.dev0, 2.0.5, 2.0.6.dev0, 2.0.6, 2.0.7, 2.0.8, 2.0.9, 2.0.10.dev0, 2.0.10, 2.0                                                                             .11.dev0, 2.0.11, 2.0.12.dev0, 2.0.12.dev1, 2.0.12, 2.0.13.dev0, 2.0.13.dev1, 2.                                                                             0.13.dev2, 2.0.13.dev4, 2.0.13, 2.0.14.dev0, 2.0.14.dev1, 2.0.15, 2.0.16.dev0, 2                                                                             .0.16, 2.0.17.dev0, 2.0.17.dev1, 2.0.17, 2.0.18.dev0, 2.0.18.dev1, 2.0.18, 2.1.0                                                                             , 2.1.1.dev0, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5, 2.1.6, 2.1.7.dev0, 2.1.7, 2.1.8                                                                             , 2.1.9, 2.2.0.dev10, 2.2.0.dev11, 2.2.0.dev13, 2.2.0.dev15, 2.2.0.dev17, 2.2.0.                                                                             dev18, 2.2.0.dev19, 2.2.0, 2.2.1, 2.2.2.dev0, 2.2.2.dev3, 2.2.2.dev4, 2.2.2, 2.2                                                                             .3.dev0, 2.2.3, 2.2.4, 2.3.0.dev1, 2.3.0, 2.3.1, 2.3.2, 2.3.3.dev0, 2.3.3, 2.3.4                                                                             , 2.3.5, 2.3.6, 2.3.7)
+  175  ERROR: No matching distribution found for spacy==3.1.3
+  176  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ pip install                                                                              spacy
+  177  WARNING: pip is being invoked by an old script wrapper. This will fail in a futu                                                                             re version of pip.
+  178  Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the unde                                                                             rlying issue.
+  179  To avoid this problem you can invoke Python with '-m pip' instead of running pip                                                                              directly.
+  180  DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please                                                                              upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop s                                                                             upport for Python 2.7 in January 2021. More details about Python 2 support in pi                                                                             p can be found at https://pip.pypa.io/en/latest/development/release-process/#pyt                                                                             hon-2-support pip 21.0 will remove support for this functionality.
+  181  Defaulting to user installation because normal site-packages is not writeable
+  182  Collecting spacy
+  183  ERROR: Operation cancelled by user
+  184  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python -m pip show spacy
+  185  DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+  186  WARNING: Package(s) not found: spacy
+  187  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ sudo add-apt-repository ppa:deadsnakes/ppa
+  188  Cannot add PPA: 'ppa:~deadsnakes/ubuntu/ppa'.
+  189  ERROR: '~deadsnakes' user or team does not exist.
+  190  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda install -c anaconda python=3.8
+  191  Collecting package metadata (current_repodata.json): failed
+  192  CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/anaconda/linux-64/current_repodata.json>
+  193  Elapsed: -
+  194  An HTTP error occurred when trying to retrieve this URL.
+  195  HTTP errors are often intermittent, and a simple retry will get you on your way.
+  196  'https://conda.anaconda.org/anaconda/linux-64'
+  197  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python --version
+  198  Python 2.7.17
+  199  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda update --all
+  200  Collecting package metadata (current_repodata.json): done
+  201  Solving environment: done
+  202  # All requested packages already installed.
+  203  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ python --version
+  204  Python 2.7.17
+  205  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda install -c anaconda python=3.8
+  206  Collecting package metadata (current_repodata.json): failed
+  207  CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/anaconda/linux-64/current_repodata.json>
+  208  Elapsed: -
+  209  An HTTP error occurred when trying to retrieve this URL.
+  210  HTTP errors are often intermittent, and a simple retry will get you on your way.
+  211  'https://conda.anaconda.org/anaconda/linux-64'
+  212  (nlp_text_analytics) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda deactivate
+  213  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda
+  214  usage: conda [-h] [-V] command ...
+  215  conda is a tool for managing and deploying applications, environments and packages.
+  216  Options:
+  217  positional arguments:
+  218  optional arguments:
+  219  conda commands available from other packages:
+  220  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda env remove nlp_text_analytics
+  221  usage: conda-env [-h] {create,export,list,remove,update,config} ...
+  222  conda-env: error: unrecognized arguments: nlp_text_analytics
+  223  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda env remove --name  nlp_text_analytics
+  224  Remove all packages in environment /home/persistent.co.in/ishan_borker/anaconda3/envs/nlp_text_analytics:
+  225  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda create -n py38 python=3.8
+  226  Collecting package metadata (current_repodata.json): done
+  227  Solving environment: done
+  228  ## Package Plan ##
+  229  history
+  230  conda activate nlp_text_analytics
+  231  cd Downloads/
+  232  cat con
+  233  cat config 
+  234  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  235  pip --version
+  236  python --version
+  237  python -m pip install -U pip setuptools wheel
+  238  cd ..
+  239  python -m pip install spacy==3.1.3
+  240  python -m pip -U install spacy==3.1.3
+  241  python -m pip -U install spacy==3.1.3 --user 
+  242  python -m pip install spacy==3.1.3 --user 
+  243  pip install gensim config --global http.sslVerify false
+  244  pip install numpy
+  245  pip install pandas
+  246  pip3 install pandas
+  247  python3 -m pip install spacy==3.1.3 --user 
+  248  python --version
+  249  python3 -m pip install spacy==3.1.3
+  250  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  251  pip3 install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  252  python3 -m pip3 install pip3 setuptools wheel
+  253  python3 -m pip3 install pip setuptools wheel
+  254  python3 -m pip install pip setuptools wheel
+  255  python3 -m pip install spacy==3.1.3
+  256  python -m pip install spacy==3.1.3
+  257  python -m pip install spacy
+  258  python -m pip install spacy --user
+  259  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  260  pip3
+  261  pip3 install spacy
+  262  pip --cert /etc/ssl/certs/FOO_Root_CA.pem install linkchecker
+  263  pip install --trusted-host pypi.python.org linkchecker
+  264  python2
+  265  ls
+  266  cd anaconda3/
+  267  ls
+  268  cd envs/
+  269  ls
+  270  cd nlp_text_analytics/
+  271  ls
+  272  cd lib/
+  273  ls
+  274  cd ..
+  275  cd ssl/
+  276  ls
+  277  cd ..
+  278  ls
+  279  cd bin/
+  280  ls
+  281  rm -r python
+  282  ls
+  283  cd ..
+  284  pip install --trusted-host pypi.python.org linkchecker
+  285  conda deactivate
+  286  conda create -n test python=3.7
+  287  conda activate test
+  288  pip
+  289  pip install --trusted-host pypi.python.org linkchecker
+  290  $ pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  291  pip
+  292  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  293  pip3 install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  294  pip3 install pandas
+  295  pip3 install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip3 setuptools
+  296  pip3 install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  297  pip install pandas
+  298  pip install sklearn
+  299  pip3 install spacy
+  300  python2
+  301  python -m pip install spacy
+  302  python -m $ pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  303  python -m pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  304  python -m pip install spacy
+  305  python -m pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  306  python -m pip install spacy==3.1.3
+  307  python3 -m pip install spacy==3.1.3
+  308  conda deactivate tes
+  309  conda deactivate test
+  310  conda env remove --name test
+  311  history
+  312  conda env remove -n test
+  313  conda deactivate test
+  314  conda deactivate
+  315  conda env remove -n test
+  316  conda env remove -n nlp_text_analytics
+  317  conda create --name nlp_text_analytics
+  318  login as: ishan_borker
+  319  Keyboard-interactive authentication prompts from server:
+  320  | Password:
+  321  End of keyboard-interactive prompts from server
+  322  Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-142-generic x86_64)
+  323  187 updates can be applied immediately.
+  324  143 of these updates are standard security updates.
+  325  To see these additional updates run: apt list --upgradable
+  326  Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+  327  *** System restart required ***
+  328  Last login: Thu May 12 15:21:32 2022 from 10.37.2.98
+  329  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda create --name nlp_text_analytics
+  330  Collecting package metadata (current_repodata.json): done
+  331  Solving environment: done
+  332  ## Package Plan ##
+  333  Proceed ([y]/n)? y
+  334  Preparing transaction: done
+  335  Verifying transaction: done
+  336  Executing transaction: done
+  337  #
+  338  # To activate this environment, use
+  339  #
+  340  #     $ conda activate nlp_text_analytics
+  341  #
+  342  # To deactivate an active environment, use
+  343  #
+  344  #     $ conda deactivate
+  345  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$
+  346  login as: ishan_borker
+  347  Keyboard-interactive authentication prompts from server:
+  348  | Password:
+  349  End of keyboard-interactive prompts from server
+  350  Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-142-generic x86_64)
+  351  187 updates can be applied immediately.
+  352  143 of these updates are standard security updates.
+  353  To see these additional updates run: apt list --upgradable
+  354  Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+  355  *** System restart required ***
+  356  Last login: Thu May 12 15:21:32 2022 from 10.37.2.98
+  357  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$ conda create --name nlp_text_analytics
+  358  Collecting package metadata (current_repodata.json): done
+  359  Solving environment: done
+  360  ## Package Plan ##
+  361  Proceed ([y]/n)? y
+  362  Preparing transaction: done
+  363  Verifying transaction: done
+  364  Executing transaction: done
+  365  #
+  366  # To activate this environment, use
+  367  #
+  368  #     $ conda activate nlp_text_analytics
+  369  #
+  370  # To deactivate an active environment, use
+  371  #
+  372  #     $ conda deactivate
+  373  (base) ishan_borker@persistent.co.in@hj-corcto14131:~$
+  374  conda activate nlp_text_analytics
+  375  python -m pip install --upgrade pip --user
+  376  pip --version
+  377  python -m pip install --upgrade pip
+  378  pip install --upgrade pip
+  379  python -m pip install -U pip setuptools wheel --user
+  380  pip install numpy
+  381  No matching distribution found for numpy
+  382  pip install numpy
+  383  pip install --upgrade pip
+  384  ls
+  385  cd anaconda3/
+  386  ls
+  387  cd envs/
+  388  ls
+  389  conda env remove -n nlp_text_analytics/
+  390  conda env remove -n nlp_text_analytics
+  391  ls
+  392  cd nlp_text_analytics/
+  393  ls
+  394  rm -r nl
+  395  cd ..
+  396  rm -r nlp_text_analytics/
+  397  ls
+  398  cd ..
+  399  conda create --name nlp_text_analytics
+  400  conda activate nlp_text_analytics
+  401  python --version
+  402  conda install python==3.7
+  403  python --version
+  404  pip --version
+  405  python --version
+  406  python -m pip install --upgrade pip
+  407  python -m pip install -U pip setuptools wheel
+  408  python3 -m pip install -U pip setuptools wheel
+  409  python -m pip install -U spacy==3.1.3
+  410  python -m pip install -U spacy
+  411  conda activate nlp_text_analytics
+  412  python -m pip install -U pip setuptools wheel
+  413  cd Downloads/
+  414  cat config 
+  415  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  416  python -m pip install -U pip setuptools wheel
+  417  conda activate nlp_text_analytics
+  418  python
+  419  history
+  420  cd Downloads/
+  421  ls
+  422  cd conda/
+  423  cd ..
+  424  cat con
+  425  cat config 
+  426  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org pip setuptools
+  427  python -m pip install spacy==3.1.3
+  428  python -m pip install spacy[lookups]
+  429  python -m pip show spacy
+  430  python3 -m pip show spacy
+  431  python3 -m pip install spacy[lookups]
+  432  python3 -m pip install spacy==3.1.3
+  433  Could not fetch URL https://pypi.org/simple/spacy/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/spacy/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1045)'))) - skipping
+  434  conda activate nlp_text_analytics
+  435  python -m pip install -U spacy==3.1.3
+  436  python -m pip install -U spacy
+  437  conda activate nlp_text_analytics
+  438  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org
+  439  cd Downloads/
+  440  cat config 
+  441  rm -r config
+  442  ls
+  443  pip install numpy
+  444  pip install pandas
+  445  python -m pip install --upgrade pip
+  446  python -m pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org spacy==3.1.3
+  447  vi spacy.txt
+  448  ls
+  449  python -m pip install spacy[lookups]
+  450  python -m pip show spacy
+  451  python -m spacy download en_core_web_sm
+  452  import spacy
+  453  conda activate nlp_text_analytics
+  454  python -m pip install tf-nightly
+  455  conda activate nlp_text_analytics
+  456  ls
+  457  python -m pip install -U spacy==3.1.3
+  458  python -m pip install -U pip setuptools wheel
+  459  python -m pip install --upgrade pip
+  460  wget -P data/word_vectors http://neuroner.com/data/word_vectors/glove.6B.100d.zip
+  461  ls
+  462  cd data/
+  463  ls
+  464  cd word_vectors/
+  465  ls
+  466  unzip data/word_vectors/glove.6B.100d.zip -d data/word_vectors/
+  467  sudo apt install unzip
+  468  unzip data/word_vectors/glove.6B.100d.zip -d data/word_vectors/
+  469  cd ..
+  470  unzip data/word_vectors/glove.6B.100d.zip -d data/word_vectors/
+  471  ls
+  472  cd data/word_vectors/
+  473  ls
+  474  python -m pip install pyneuroner[cpu[
+  475  python -m pip install pyneuroner[cpu]
+  476  python -m pip install pyneuroner[gpu]
+  477  python -m spacy download en
+  478  spacy.load('en_core_web_sm')
+  479  bash spacy.load('en_core_web_sm')
+  480  python -m pip install -U spacy==3.1.3
+  481  neuroner --fetch_data=conll2003
+  482  python -m pip show tensorflow
+  483  neuroner --fetch_data=conll2003
+  484  neuroner --fetch_data=i2b2_2014_deid
+  485  python --version
+  486  python
+  487  python -m pip install neuroner
+  488  neuroner --fetch_data=conll2003
+  489  neuroner --fetch_data=example_unannotated_texts
+  490  python -m pip install neuroner[gpu]
+  491  python -m pip show neuroner
+  492  python -m pip install neuroner[gpu]neuroner --fetch_data=i2b2_2014_deid
+  493  neuroner --fetch_data=i2b2_2014_deid
+  494  from neuroner import neuromodel
+  495  cd ..
+  496  ls
+  497  cd anaconda3/
+  498  ls
+  499  cd envs/
+  500  ls
+  501  cd nlp_text_analytics/
+  502  ls
+  503  cd ..
+  504  ls
+  505  pwe
+  506  pwd
+  507  python
+  508  python3
+  509  pip show tensorflow
+  510  python -m pip show tensorflow
+  511  python -m pip install tensorflow==1.15.5
+  512  python -m pip show tensorflow
+  513  python3
+  514  git clone https://github.com/Franck-Dernoncourt/NeuroNER.git
+  515  git
+  516  sudo apt-get install git
+  517  git clone https://github.com/Franck-Dernoncourt/NeuroNER.git
+  518  wget https://github.com/Franck-Dernoncourt/NeuroNER.git
+  519  ls
+  520  curl -L -O https://github.com/Franck-Dernoncourt/NeuroNER.git
+  521  ls
+  522  pwd
+  523  cd Des
+  524  ls
+  525  cd NeuroNER-master/
+  526  ls
+  527  python -m neuroner --fetch_data=conll2003
+  528  python -m pip show tensorflow
+  529  python -m pip install tensorflow=1.15
+  530  python -m pip install tensorflow==1.15
+  531  conda activate nlp_text_analytics
+  532  ls
+  533  cd NeuroNER-master/
+  534  ls
+  535  cd neuroner/
+  536  ls
+  537  python brat_to_conll.py 
+  538  python -m pip show tensorflow
+  539  python -m pip install tensorflow==1.15
+  540  python -m pip install tf-nightly
+  541  python -m pip install tensorflow==1.15.0
+  542  python -m pip install tensorflow==1.15.1
+  543  python -m pip install tensorflow==1.1
+  544  python -m pip install tensorflow==1.15.5
+  545  python -m pip install tensorflow==1.0
+  546  cd ..
+  547  pip list | findstr 'tensorflow'
+  548  python -m pip list | findstr 'tensorflow'
+  549  python -m pip list | findstr "tensorflow"
+  550  conda  list | findstr "tensorflow"
+  551  python brat_to_conll.py 
+  552  cd NeuroNER-master/
+  553  cd neuroner/
+  554  ls
+  555  cd data/
+  556  ls
+  557  cd ..
+  558  python conll_to_brat.py 
+  559  python prepare_pretrained_model.py 
+  560  ls
+  561  python neuromodel.py 
+  562  python brat_to_conll.py 
+  563  python -m pip install tensorflow==1.15.0
+  564  python -m pip install tf-nightly
+  565  cd data/
+  566  ls
+  567  cd ner_poc/
+  568  ls
+  569  python brat_to_conll.py 
+  570  ls
+  571  python sentencesplit.py 
+  572  ls
+  573  python ssp
+  574  python ssplit.py 
+  575  python sspostproc.py 
+  576  cd ..
+  577  ls
+  578  python brat_to_conll.py 
+  579  python -m pip install tf-nightly-gpu
+  580  python brat_to_conll.py 
+  581  python -m pip install tensorflow-gpu==2.0.0
+  582  python -m pip install tensorflow-gpu==2.0
+  583  python -m pip install tensorflow-gpu==2.0.0
+  584  cd ..
+  585  python -m pip -r requirements.txt 
+  586  pip -r requirements.txt 
+  587  pip install -r requirements.txt 
+  588  python -m pip install -r requirements.txt 
+  589  cd neuroner/
+  590  python brat_to_conll.py 
+  591  pip list
+  592  python -m pip install tensorflow
+  593  pip list
+  594  python -m pip list
+  595  python -m pip uninstall tensorflow-gpu
+  596  python -m pip uninstall tf-nightly-gpu
+  597  python -m pip uninstall tf-estimator-nightly
+  598  python -m pip list
+  599  python -m pip uninstall tensorflow
+  600  python -m pip install tensorflow=1.15.0
+  601  python -m pip install tensorflow==1.15.0
+  602  pip list
+  603  python -m pip list
+  604  neuroner --fetch_data=conll2003
+  605  neuroner --fetch_data=example_unannotated_texts
+  606  neuroner --fetch_data=i2b2_2014_deid
+  607  python
+  608  neuroner --fetch_trained_model=conll_2003_en
+  609  neuroner --fetch_trained_model=i2b2_2014_glove_spacy_bioes
+  610  neuroner --fetch_trained_model=i2b2_2014_glove_stanford_bioes
+  611  neuroner --fetch_trained_model=mimic_glove_spacy_bioes
+  612  neuroner --fetch_trained_model=mimic_glove_stanford_bioes
+  613  python
+  614  neuroner --maximum_number_of_epochs=2 --token_pretrained_embedding_filepath=""
+  615  neuroner --train_model=False --use_pretrained_model=True --dataset_text_folder=./data/example_unannotated_texts --pretrained_model_folder=./trained_models/conll_2003_en
+  616  python
+  617  nlp = spacy.load("en_core_web_sm")
+  618  neuroner --train_model=False --use_pretrained_model=True --dataset_text_folder=./data/example_unannotated_texts --pretrained_model_folder=./trained_models/conll_2003_en
+  619  ls
+  620  python brat_to_conll.py 
+  621  python prepare_pretrained_model.py 
+  622  python brat_to_conll.py 
+  623  python
+  624  neuroner --train_model=False --use_pretrained_model=True --dataset_text_folder=./data/chia_with_scope --pretrained_model_folder=./trained_models/conll_2003_en
+  625  python neuromodel.py 
+  626  conda activate nlp_text_analytics
+  627  ls
+  628  cd NeuroNER-master/neuroner/
+  629  ls
+  630  python brat_to_conll.py 
+  631  cd
+  632  ls
+  633  cd standoff2conll-master/
+  634  ls
+  635  cd ..
+  636  cd NeuroNER-master/neuroner/
+  637  neuroner --maximum_number_of_epochs=2 --token_pretrained_embedding_filepath=""
+  638  neuroner --train_model=True --use_pretrained_model=True --dataset_text_folder=./data/chia_with_scope --pretrained_model_folder=./trained_models/conll_2003_en
+  639  cd ..
+  640  cd standoff2conll-master/
+  641  python standoff2conll.py 
+  642  clear
+  643  python standoff2conll.py 
+  644  conda activate nlp_text_analytics
+  645  ls
+  646  cd standoff2conll-master/
+  647  ls
+  648  python standoff2conll.py 
+  649  cd ..
+  650  cd NeuroNER-master/neuroner/
+  651  python
+  652  neuroner --maximum_number_of_epochs=2 --token_pretrained_embedding_filepath=""
+  653  conda activate nlp_text_analytics
+  654  cd NeuroNER-master/neuroner/
+  655  ls
+  656  python standoff2conll.py 
+  657  python standoff
+  658  python standoff.py 
+  659  clear
+  660  python standoff.py 
+  661  conda activate nlp_text_analytics
+  662  cd NeuroNER-master/neuroner/
+  663  neuroner --maximum_number_of_epochs=2 --token_pretrained_embedding_filepath=""
+  664  python standoff.py 
+  665  python standoff2conll.py 
+  666  cd ..
+  667  ls
+  668  cd standoff2conll-master/
+  669  ls
+  670  pwd
+  671  cp /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/*
+  672  cp -r /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/*
+  673  ls
+  674  cd data/
+  675  cp -r /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/chia_with_scope
+  676  ls
+  677  rm -r *
+  678  ls
+  679  cp -r /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/chia_with_scope
+  680  cd ..
+  681  python standoff2conll.py data/chia_with_scope/ > train.bio
+  682  python unicode2ascii.py 
+  683  python standoff2conll.py data/chia_with_scope/ > train.bio
+  684  python standoff.py data/chia_with_scope/ 
+  685  python standoff2conll.py data/chia_with_scope/ > train.bio
+  686  python standoff.py data/chia_with_scope/ > train.bio
+  687  python standoff2conll.py data/chia_with_scope/ > train.bio
+  688  python3 standoff2conll.py data/chia_with_scope/ > train.bio
+  689  ls
+  690  vi train.bio 
+  691  python3 standoff2conll.py data/chia_with_scope/ > dev.bio
+  692  ls
+  693  python3 standoff2conll.py data/chia_with_scope/ > test.bio
+  694  vi train.bio 
+  695  conda activate nlp_text_analytics
+  696  ls
+  697  cd standoff2conll-master/
+  698  ls
+  699  python3 standoff2conll.py data/chia_with_scope/ > train.bio
+  700  ls
+  701  cd output/
+  702  ls
+  703  vi train.spacy 
+  704  clear
+  705  python -m spacy convert train.bio -c conll ./output/
+  706  ls
+  707  cd ..
+  708  ls
+  709  python -m spacy convert train.bio -c conll ./output/
+  710  python -m spacy convert train.bio -c conll ./output/ -n 10
+  711  conda activate nlp_text_analytics
+  712  cd standoff2conll-master/
+  713  ls
+  714  history
+  715  ls
+  716  python -m spacy convert train.bio -c conll ./output/
+  717  cd output/
+  718  python -m spacy run train.spacy 
+  719  python -m spacy --help
+  720  python -m spacy evaluate train.spacy 
+  721  python -m spacy project run train.spacy 
+  722  python -m spacy project run 
+  723  python -m spacy project run package
+  724  cls
+  725  cd ..
+  726  python -m spacy evaluate output/train.spacy 
+  727  conda activate nlp_text_analytics
+  728  python -m spacy evaluate output/train.spacy 
+  729  python -m spacy convert train.bio -c conll ./output/
+  730  cd standoff2conll-master/
+  731  python -m spacy convert train.bio -c conll ./output/
+  732  conda activate nlp_text_analytics
+  733  cd standoff2conll-master/
+  734  conda activate nlp_text_analytics
+  735  cd standoff2conll-master/
+  736  ls
+  737  python -m spacy evaluate output/train.spacy 
+  738  python -m spacy evaluate output/train.spacy
+  739  ls
+  740  >python -m spacy train --output ./output --paths.train ./train.spacy
+  741  python -m spacy train --output ./output --paths.train ./train.spacy
+  742  python -m spacy train --help
+  743  conda activate nlp_text_analytics
+  744  cd standoff2conll-master/
+  745  history
+  746  python -m spacy project run train.spacy
+  747  python -m spacy evaluate run train.spacy
+  748  python -m spacy evaluate run output/train.spacy
+  749  python -m spacy evaluate output/train.spacy
+  750  python -m spacy evaluate ./output/train.spacy
+  751  conda activate nlp_text_analytics
+  752  cd standoff2conll-master/
+  753  python -m spacy evaluate train.spacy 
+  754  python -m spacy convert train.bio -c conll ./output/
+  755  conda activate nlp_text_analytics
+  756  cd standoff2conll-master/
+  757  ls
+  758  python -m spacy train base_config.cfg --output ./output/train.spacy 
+  759  conda activate nlp_text_analytics
+  760  cd standoff2conll-master/
+  761  python -m spacy train base_config.cfg --output ./output/train.spacy 
+  762  python -m spacy debug config config.cfg
+  763  python -m spacy validate
+  764  conda activate nlp_text_analytics
+  765  cd standoff2conll-master/
+  766  python -m spacy train config.cfg --output ./output/train.spacy 
+  767  python -m spacy download en_core_web_lg
+  768  clear
+  769  python -m spacy download en_core_web_lg
+  770  ls
+  771  cd output/
+  772  ls
+  773  cd ..
+  774  python -m spacy convert dev.bio -c conll ./output/
+  775  python -m spacy validate
+  776  cd output/
+  777  ls
+  778  cd ..
+  779  python -m spacy config.cfg --output ./output/train.spacy 
+  780  ls
+  781  vi config.cfg 
+  782  python -m spacy config.cfg --output ./output/train.spacy 
+  783  python -m spacy init fill-config config.cfg config.cfg 
+  784  python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
+  785  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  786  conda activate nlp_text_analytics
+  787  cd standoff2conll-master/
+  788  ls
+  789  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  790  conda activate nlp_text_analytics
+  791  history
+  792  cd standoff2conll-master/
+  793  ls
+  794  python3 standoff2conll.py data/chia_with_scope/ > train.bio
+  795  python standoff2conll.py data/chia_with_scope/ > train.bio
+  796  ls
+  797  cd data/
+  798  ls
+  799  cd chia_with_scope/
+  800  ks
+  801  ls
+  802  python standoff2conll.py data/chia_with_scope/ > train.bio
+  803  cd ..
+  804  python standoff2conll.py data/chia_with_scope/ > train.bio
+  805  cd ..
+  806  python3 standoff2conll.py data/chia_with_scope/ >train.bio
+  807  python3 standoff2conll.py data/chia_with_scope >train.bio
+  808  python3 standoff2conll.py data/chia_with_scope > train.bio
+  809  ls
+  810  python standoff2conll.py data/chia_with_scope/ > train.bio
+  811  python standoff2conll.py 
+  812  python standoff2conll.py data/chia_with_scope/ > train.bio
+  813  python standoff2conll.py data/chia_with_scope/train > train.bio
+  814  python standoff2conll.py data/chia_with_scope/test > test.bio
+  815  python standoff2conll.py data/chia_with_scope/valid > valid.bio
+  816  ls
+  817  cd data/chia_with_scope/
+  818  ls
+  819  cd test/
+  820  ls
+  821  cd ..
+  822  python standoff2conll.py data/chia_with_scope/valid/ > valid.bio
+  823  python3 standoff2conll.py data/chia_with_scope/valid > valid.bio
+  824  python standoff2conll.py data/chia_with_scope/valid > valid.bio
+  825  cls
+  826  cleasr
+  827  clear
+  828  python standoff2conll.py data/chia_with_scope/train > train.bio
+  829  cd ..
+  830  python standoff2conll.py data/chia_with_scope/train > train.bio
+  831  python3 standoff2conll.py data/chia_with_scope/train > train.bio
+  832  ls
+  833  cd output/
+  834  ls
+  835  cd ..
+  836  python -m spacy convert train.bio -c conll ./output/
+  837  python -m spacy convert test.bio -c conll ./output/
+  838  python -m spacy convert valid.bio -c conll ./output/
+  839  ls
+  840  cd output/
+  841  ls
+  842  cd ..
+  843  python -m spacy evaluate train.spacy
+  844  python -m spacy init fill-config config.cfg config.cfg 
+  845  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy --paths.valid ./valid.spacy
+  846  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy 
+  847  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy 
+  848  python -m spacy train config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy 
+  849  python -m spacy evaluate config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy 
+  850  python -m spacy evaluate --help
+  851  cd standoff2conll-master/
+  852  conda activate nlp_text_analytics
+  853  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  854  history
+  855  history > commands.txt

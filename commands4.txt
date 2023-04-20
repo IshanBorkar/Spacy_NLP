@@ -1,0 +1,1000 @@
+  621  python prepare_pretrained_model.py 
+  622  python brat_to_conll.py 
+  623  python
+  624  neuroner --train_model=False --use_pretrained_model=True --dataset_text_folder=./data/chia_with_scope --pretrained_model_folder=./trained_models/conll_2003_en
+  625  python neuromodel.py 
+  626  conda activate nlp_text_analytics
+  627  ls
+  628  cd NeuroNER-master/neuroner/
+  629  ls
+  630  python brat_to_conll.py 
+  631  cd
+  632  ls
+  633  cd standoff2conll-master/
+  634  ls
+  635  cd ..
+  636  cd NeuroNER-master/neuroner/
+  637  neuroner --maximum_number_of_epochs=2 --token_pretrained_embedding_filepath=""
+  638  neuroner --train_model=True --use_pretrained_model=True --dataset_text_folder=./data/chia_with_scope --pretrained_model_folder=./trained_models/conll_2003_en
+  639  cd ..
+  640  cd standoff2conll-master/
+  641  python standoff2conll.py 
+  642  clear
+  643  python standoff2conll.py 
+  644  conda activate nlp_text_analytics
+  645  ls
+  646  cd standoff2conll-master/
+  647  ls
+  648  python standoff2conll.py 
+  649  cd ..
+  650  cd NeuroNER-master/neuroner/
+  651  python
+  652  neuroner --maximum_number_of_epochs=2 --token_pretrained_embedding_filepath=""
+  653  conda activate nlp_text_analytics
+  654  cd NeuroNER-master/neuroner/
+  655  ls
+  656  python standoff2conll.py 
+  657  python standoff
+  658  python standoff.py 
+  659  clear
+  660  python standoff.py 
+  661  conda activate nlp_text_analytics
+  662  cd NeuroNER-master/neuroner/
+  663  neuroner --maximum_number_of_epochs=2 --token_pretrained_embedding_filepath=""
+  664  python standoff.py 
+  665  python standoff2conll.py 
+  666  cd ..
+  667  ls
+  668  cd standoff2conll-master/
+  669  ls
+  670  pwd
+  671  cp /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/*
+  672  cp -r /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/*
+  673  ls
+  674  cd data/
+  675  cp -r /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/chia_with_scope
+  676  ls
+  677  rm -r *
+  678  ls
+  679  cp -r /home/persistent.co.in/ishan_borker/NeuroNER-master/neuroner/data/chia_with_scope/  /home/persistent.co.in/ishan_borker/standoff2conll-master/data/chia_with_scope
+  680  cd ..
+  681  python standoff2conll.py data/chia_with_scope/ > train.bio
+  682  python unicode2ascii.py 
+  683  python standoff2conll.py data/chia_with_scope/ > train.bio
+  684  python standoff.py data/chia_with_scope/ 
+  685  python standoff2conll.py data/chia_with_scope/ > train.bio
+  686  python standoff.py data/chia_with_scope/ > train.bio
+  687  python standoff2conll.py data/chia_with_scope/ > train.bio
+  688  python3 standoff2conll.py data/chia_with_scope/ > train.bio
+  689  ls
+  690  vi train.bio 
+  691  python3 standoff2conll.py data/chia_with_scope/ > dev.bio
+  692  ls
+  693  python3 standoff2conll.py data/chia_with_scope/ > test.bio
+  694  vi train.bio 
+  695  conda activate nlp_text_analytics
+  696  ls
+  697  cd standoff2conll-master/
+  698  ls
+  699  python3 standoff2conll.py data/chia_with_scope/ > train.bio
+  700  ls
+  701  cd output/
+  702  ls
+  703  vi train.spacy 
+  704  clear
+  705  python -m spacy convert train.bio -c conll ./output/
+  706  ls
+  707  cd ..
+  708  ls
+  709  python -m spacy convert train.bio -c conll ./output/
+  710  python -m spacy convert train.bio -c conll ./output/ -n 10
+  711  conda activate nlp_text_analytics
+  712  cd standoff2conll-master/
+  713  ls
+  714  history
+  715  ls
+  716  python -m spacy convert train.bio -c conll ./output/
+  717  cd output/
+  718  python -m spacy run train.spacy 
+  719  python -m spacy --help
+  720  python -m spacy evaluate train.spacy 
+  721  python -m spacy project run train.spacy 
+  722  python -m spacy project run 
+  723  python -m spacy project run package
+  724  cls
+  725  cd ..
+  726  python -m spacy evaluate output/train.spacy 
+  727  conda activate nlp_text_analytics
+  728  python -m spacy evaluate output/train.spacy 
+  729  python -m spacy convert train.bio -c conll ./output/
+  730  cd standoff2conll-master/
+  731  python -m spacy convert train.bio -c conll ./output/
+  732  conda activate nlp_text_analytics
+  733  cd standoff2conll-master/
+  734  conda activate nlp_text_analytics
+  735  cd standoff2conll-master/
+  736  ls
+  737  python -m spacy evaluate output/train.spacy 
+  738  python -m spacy evaluate output/train.spacy
+  739  ls
+  740  >python -m spacy train --output ./output --paths.train ./train.spacy
+  741  python -m spacy train --output ./output --paths.train ./train.spacy
+  742  python -m spacy train --help
+  743  conda activate nlp_text_analytics
+  744  cd standoff2conll-master/
+  745  history
+  746  python -m spacy project run train.spacy
+  747  python -m spacy evaluate run train.spacy
+  748  python -m spacy evaluate run output/train.spacy
+  749  python -m spacy evaluate output/train.spacy
+  750  python -m spacy evaluate ./output/train.spacy
+  751  conda activate nlp_text_analytics
+  752  cd standoff2conll-master/
+  753  python -m spacy evaluate train.spacy 
+  754  python -m spacy convert train.bio -c conll ./output/
+  755  conda activate nlp_text_analytics
+  756  cd standoff2conll-master/
+  757  ls
+  758  python -m spacy train base_config.cfg --output ./output/train.spacy 
+  759  conda activate nlp_text_analytics
+  760  cd standoff2conll-master/
+  761  python -m spacy train base_config.cfg --output ./output/train.spacy 
+  762  python -m spacy debug config config.cfg
+  763  python -m spacy validate
+  764  conda activate nlp_text_analytics
+  765  cd standoff2conll-master/
+  766  python -m spacy train config.cfg --output ./output/train.spacy 
+  767  python -m spacy download en_core_web_lg
+  768  clear
+  769  python -m spacy download en_core_web_lg
+  770  ls
+  771  cd output/
+  772  ls
+  773  cd ..
+  774  python -m spacy convert dev.bio -c conll ./output/
+  775  python -m spacy validate
+  776  cd output/
+  777  ls
+  778  cd ..
+  779  python -m spacy config.cfg --output ./output/train.spacy 
+  780  ls
+  781  vi config.cfg 
+  782  python -m spacy config.cfg --output ./output/train.spacy 
+  783  python -m spacy init fill-config config.cfg config.cfg 
+  784  python -m spacy train config.cfg --paths.train ./train.spacy --paths.dev ./dev.spacy
+  785  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  786  conda activate nlp_text_analytics
+  787  cd standoff2conll-master/
+  788  ls
+  789  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  790  conda activate nlp_text_analytics
+  791  history
+  792  cd standoff2conll-master/
+  793  ls
+  794  python3 standoff2conll.py data/chia_with_scope/ > train.bio
+  795  python standoff2conll.py data/chia_with_scope/ > train.bio
+  796  ls
+  797  cd data/
+  798  ls
+  799  cd chia_with_scope/
+  800  ks
+  801  ls
+  802  python standoff2conll.py data/chia_with_scope/ > train.bio
+  803  cd ..
+  804  python standoff2conll.py data/chia_with_scope/ > train.bio
+  805  cd ..
+  806  python3 standoff2conll.py data/chia_with_scope/ >train.bio
+  807  python3 standoff2conll.py data/chia_with_scope >train.bio
+  808  python3 standoff2conll.py data/chia_with_scope > train.bio
+  809  ls
+  810  python standoff2conll.py data/chia_with_scope/ > train.bio
+  811  python standoff2conll.py 
+  812  python standoff2conll.py data/chia_with_scope/ > train.bio
+  813  python standoff2conll.py data/chia_with_scope/train > train.bio
+  814  python standoff2conll.py data/chia_with_scope/test > test.bio
+  815  python standoff2conll.py data/chia_with_scope/valid > valid.bio
+  816  ls
+  817  cd data/chia_with_scope/
+  818  ls
+  819  cd test/
+  820  ls
+  821  cd ..
+  822  python standoff2conll.py data/chia_with_scope/valid/ > valid.bio
+  823  python3 standoff2conll.py data/chia_with_scope/valid > valid.bio
+  824  python standoff2conll.py data/chia_with_scope/valid > valid.bio
+  825  cls
+  826  cleasr
+  827  clear
+  828  python standoff2conll.py data/chia_with_scope/train > train.bio
+  829  cd ..
+  830  python standoff2conll.py data/chia_with_scope/train > train.bio
+  831  python3 standoff2conll.py data/chia_with_scope/train > train.bio
+  832  ls
+  833  cd output/
+  834  ls
+  835  cd ..
+  836  python -m spacy convert train.bio -c conll ./output/
+  837  python -m spacy convert test.bio -c conll ./output/
+  838  python -m spacy convert valid.bio -c conll ./output/
+  839  ls
+  840  cd output/
+  841  ls
+  842  cd ..
+  843  python -m spacy evaluate train.spacy
+  844  python -m spacy init fill-config config.cfg config.cfg 
+  845  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy --paths.valid ./valid.spacy
+  846  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy 
+  847  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy 
+  848  python -m spacy train config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy 
+  849  python -m spacy evaluate config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy 
+  850  python -m spacy evaluate --help
+  851  cd standoff2conll-master/
+  852  conda activate nlp_text_analytics
+  853  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  854  history
+  855  history > commands.txt
+  856  ls
+  857  conda activate nlp_text_analytics
+  858  ls
+  859  cd standoff2conll-master/
+  860  ls
+  861  conda activate nlp_text_analytics
+  862  cd standoff2conll-master/
+  863  ls
+  864  python3 standoff2conll.py data/train > train.bio
+  865  python3 standoff2conll.py data/test > test.bio
+  866  python3 standoff2conll.py data/valid > valid.bio
+  867  python3 standoff2conll.py data/train > train.bio
+  868  python -m spacy convert train.bio -c conll ./output/
+  869  python -m spacy convert test.bio -c conll ./output/
+  870  python -m spacy convert valid.bio -c conll ./output/
+  871  cd standoff2conll-master/
+  872  conda activate nlp_text_analytics
+  873  conda activate nlp_text_analytics
+  874  cd standoff2conll-master/
+  875  ls
+  876  python -m spacy convert train.bio -c conll ./output/
+  877  python -m spacy convert test.bio -c conll ./output/
+  878  python -m spacy convert valid.bio -c conll ./output/
+  879  python3 standoff2conll.py data/train > train.bio
+  880  python3 standoff2conll.py data/test > test.bio
+  881  python3 standoff2conll.py data/valid > valid.bio
+  882  python -m spacy convert train.bio -c conll ./output/
+  883  python -m spacy convert valid.bio -c conll ./output/
+  884  python -m spacy convert test.bio -c conll ./output/
+  885  conda activate nlp_text_analytics
+  886  cd standoff2conll-master/
+  887  cd standoff2conll-master/
+  888  conda activate nlp_text_analytics
+  889  history
+  890  python3 standoff2conll.py data/train > train.bio
+  891  python3 standoff2conll.py data/test > test.bio
+  892  python3 standoff2conll.py data/valid > valid.bio
+  893  python3 standoff2conll.py data/train > train.bio
+  894  AssertionError: text mismatch (check encoding?): 383-399
+  895  "   "prostate cancer
+  896  vs. "prostate cancer"
+  897  python3 standoff2conll.py data/test > test.bio
+  898  python3 standoff2conll.py data/valid > valid.bio
+  899  python3 standoff2conll.py data/test > test.bio
+  900  AssertionError: text mismatch (check encoding?): 239-266
+  901  "   "at the randomization visit
+  902  vs. "at the randomization visit"
+  903  python3 standoff2conll.py data/valid > valid.bio
+  904  AssertionError: text mismatch (check encoding?): 213-251
+  905  "   "solid organ or bone marrow transplant
+  906  vs. "solid organ or bone marrow transplant"
+  907  cd standoff2conll-master/
+  908  conda activate nlp_text_analytics
+  909  python3 standoff2conll.py data/train > train.bio
+  910  python3 standoff2conll.py data/valid > valid.bio
+  911  python standoff2conll.py data/test > test.bio
+  912  python -m spacy convert train.bio -c conll ./output/
+  913  python -m spacy convert train.bio -c conll ./output/ -n 10
+  914  python -m spacy convert valid.bio -c conll ./output/ -n 10
+  915  python -m spacy convert test.bio -c conll ./output/ -n 10
+  916  python -m spacy evaluate train.spacy
+  917  python -m spacy init fill-config config.cfg config.cfg 
+  918  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.valid ./output/valid.spacy
+  919  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy
+  920  python -m spacy train config.cfg --paths.train ./output/train.spacy
+  921  ls
+  922  mv -T /data/valid /data/dev
+  923  ls
+  924  cd data/
+  925  ls
+  926  mv /valid /dev
+  927  mv /data/valid /data/dev
+  928  cd ..
+  929  cd standoff2conll-master/
+  930  python standoff2conll.py data/dev > dev.bio
+  931  python -m spacy convert dev.bio -c conll ./output/ -n 10
+  932  python -m spacy evaluate train.spacy
+  933  python -m spacy init fill-config config.cfg config.cfg 
+  934  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  935  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy
+  936  python -m spacy train config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy
+  937  python -m spacy test config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy
+  938  python -m spacy train config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy
+  939  python -m spacy debug data config.cfg 
+  940  python -m spacy test config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy
+  941  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy
+  942  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  943  history > commands1.txt
+  944  python -m spacy evaluate config.cfg --paths.test ./output/test.spacy config.cfg 
+  945  python -m spacy evaluate config.cfg data/test ./output/test.spacy config.cfg 
+  946  python -m spacy evaluate config.cfg data/test -o config.cfg 
+  947  ls
+  948  vi config.cfg 
+  949  python -m spacy convert train.bio -c conll ./output/ -n 10
+  950  python -m spacy convert test.bio -c conll ./output/ -n 10
+  951  python -m spacy config.cfg --output ./output/train.spacy
+  952  python -m spacy convert dev.bio -c conll ./output/ -n 10
+  953  python -m spacy init fill-config config.cfg config.cfg
+  954  python3 standoff2conll.py data/train > train.bio
+  955  python3 standoff2conll.py data/test > test.bio
+  956  python3 standoff2conll.py data/valid > valid.bio
+  957  python3 standoff2conll.py data/dev > dev.bio
+  958  vi document.py 
+  959  cat document.py 
+  960  vim document.py 
+  961  vim standoff
+  962  vim standoff.py 
+  963  python3 standoff2conll.py data/dev > dev.bio
+  964  python3 standoff2conll.py data/test > test.bio
+  965  python3 standoff2conll.py data/train > train.bio
+  966  python -m spacy convert train.bio -c conll ./output/ 
+  967  python -m spacy convert train.bio -c conll ./output/ -n 10
+  968  python -m spacy convert test.bio -c conll ./output/ 
+  969  python -m spacy convert test.bio -c conll ./output/ -n 10
+  970  python -m spacy convert dev.bio -c conll ./output/ 
+  971  python -m spacy convert dev.bio -c conll ./output/ -n 10
+  972  python -m spacy init fill-config config.cfg config.cfg
+  973  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  974  conda activate nlp_text_analytics
+  975  cd standoff2conll-master/
+  976  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  977  cd standoff2conll-master/
+  978  conda activate nlp_text_analyticw
+  979  conda activate nlp_text_analytics
+  980  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  981  cd standoff2conll-master/
+  982  conda activate nlp_text_analytics
+  983  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  984  python -m spacy evaluate config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy
+  985  python -m spacy evaluate --help
+  986  python -m spacy evaluate -o ./output/test.spacy config.cfg ./output/test.spacy 
+  987  python -m spacy evaluate -o ./output/test.spacy standoff2conll.py ./output/test.spacy 
+  988  python -m spacy evaluate -o ./output/test.spacy train.bioimport  ./output/test.spacy 
+  989  python -m spacy evaluate -o ./output/test.spacy base_config.cfg  ./output/test.spacy 
+  990  OSError: [E053] Could not read meta.json from base_config.cfg
+  991  python -m spacy download en_core_web_sm
+  992  python -m spacy evaluate -o ./output/test.spacy base_config.cfg  ./output/test.spacy 
+  993  python -m spacy evaluate -o ./output/test.spacy config.cfg  ./output/test.spacy 
+  994  python -m spacy download en_core_web_sm
+  995  python
+  996  ls
+  997  python -m standoff2conll.py data/train > train.bio 
+  998  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+  999  python -m spacy evaluate -o output/test.spacy config.cfg  output/test.spacy 
+ 1000  python -m spacy evaluate -o output/test.spacy config.cfg  output/dev.spacy 
+ 1001  python -m spacy evaluate en_core_web_sm -o ./output/test.spacy
+ 1002  python -m spacy evaluate en_core_web_sm -o data/test ./output/test.spacy
+ 1003  python -m spacy evaluate -o output/test.spacy en_core_web_sm  output/dev.spacy 
+ 1004  python -m spacy evaluate -o output/test.spacy  output/dev.spacy 
+ 1005  python -m spacy evaluate --help
+ 1006  python -m spacy evaluate -o output/test.spacy en_core_web_sm ./output/test.spacy 
+ 1007  python -m spacy evaluate -o output/test.spacy en_core_web_sm  output/dev.spacy 
+ 1008  python -m standoff2conll.py data/test > test.bio 
+ 1009  python -m standoff2conll.py data/train > train.bio 
+ 1010  ls
+ 1011  python -m standoff2conll.py data/train > train.bio 
+ 1012  python3 -m standoff2conll.py data/train > train.bio 
+ 1013  clear
+ 1014  ls
+ 1015  python3 standoff2conll.py data/train > train.bio
+ 1016  python3 standoff2conll.py data/test > test.bio
+ 1017  python3 standoff2conll.py data/dev > dev.bio
+ 1018  python -m spacy convert train.bio -c conll ./output/ -n 10
+ 1019  python -m spacy convert test.bio -c conll ./output/ -n 10
+ 1020  python -m spacy convert dev.bio -c conll ./output/ -n 10
+ 1021  python -m spacy evaluate ./output/train.spacy
+ 1022  python -m spacy evaluate train.spacy
+ 1023  python -m spacy init fill-config config.cfg config.cfg 
+ 1024  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1025  python -m spacy evaluate -o ./output/test1.spacy config.cfg  ./output/test.spacy 
+ 1026  python -m spacy evaluate -o ./output/test1.spacy config.cfg  ./output/dev.spacy 
+ 1027  clear 
+ 1028  history
+ 1029  python -m pip install kindred
+ 1030  python -m pip show kindred
+ 1031  import kindred
+ 1032  python
+ 1033  python -m spacy evaluate -o ./output/test1.spacy config.cfg  ./output/test.spacy 
+ 1034  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1035  conda activate nlp_text_analytics
+ 1036  cd standoff2conll-master/
+ 1037  python -m spacy evaluate -o ./output/test1.spacy config.cfg  ./output/test.spacy 
+ 1038  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1039  cd standoff2conll-master/
+ 1040  conda activate nlp_text_analytics
+ 1041  history
+ 1042  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/dev.spacy 
+ 1043  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/train.spacy 
+ 1044  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/test.spacy 
+ 1045  cd standoff2conll-master/
+ 1046  conda activate nlp_text_analytics
+ 1047  history
+ 1048  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1049  cd standoff2conll-master/
+ 1050  conda activate nlp_text_analytics
+ 1051  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/test.spacy 
+ 1052  python -m spacy evaluate -o ./output/dev1.spacy en_core_web_sm ./output/dev.spacy 
+ 1053  python -m spacy evaluate -o ./output/train1.spacy en_core_web_sm ./output/train.spacy 
+ 1054  history > command2.txt
+ 1055  conda activate nlp_text_analytics
+ 1056  cd standoff2conll-master/
+ 1057  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1058  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/test.spacy 
+ 1059  python -m spacy evaluate -o ./output/dev1.spacy en_core_web_sm ./output/dev.spacy 
+ 1060  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/train.spacy 
+ 1061  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm train.bio 
+ 1062  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/dev.spacy 
+ 1063  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/test.spacy 
+ 1064  python -m spacy evaluate en_core_web_sm -o ./output/test1.spacy ./output/test.spacy 
+ 1065  python -m spacy evaluate en_core_web_sm data/test 
+ 1066  python -m spacy evaluate en_core_web_sm ./output/test.spacy
+ 1067  cd standoff2conll-master/
+ 1068  conda activate nlp_text_analytics
+ 1069  python -m spacy evaluate
+ 1070  python -m spacy evaluate en_core_web_sm
+ 1071  python -m spacy evaluate en_core_web_sm /output/test.spacy
+ 1072  python -m spacy evaluate en_core_web_sm ./output/test.spacy
+ 1073  clear
+ 1074  python -m spacy evaluate en_core_web_sm data/test
+ 1075  python -m spacy evaluate en_core_web_sm ./output/test.spacy
+ 1076  python -m pip install label-studio
+ 1077  curl google.com
+ 1078  python -m pip install label-studio
+ 1079  ./HJcpportal.sh
+ 1080  cd ..
+ 1081  ./HJcpportal.sh
+ 1082  ls
+ 1083  bash run ./HJcpportal.sh
+ 1084  chmod u+x HJcpportal.sh
+ 1085  python -m pip install label-studio
+ 1086  sudo curl google.com
+ 1087  ll
+ 1088  ./HJCPPortal.sh 
+ 1089  sudo curl google.com
+ 1090  python -m pip install label-studio
+ 1091  pip install label-studio
+ 1092  python -m pip install --user label-studio
+ 1093  python -m pip install label-studio
+ 1094  cd standoff2conll-master/
+ 1095  python -m spacy evaluate -o ./output/train1.spacy en_core_web_md ./output/train.spacy 
+ 1096  python -m spacy download en_core_web_md
+ 1097  python -m spacy evaluate -o ./output/train1.spacy en_core_web_md ./output/train.spacy 
+ 1098  python
+ 1099  python -m spacy download en_core_web_lg
+ 1100  python -m spacy evaluate -o ./output/test.spacy en_core_web_lg ./output/test.spacy 
+ 1101  conda activate nlp_text_analytics
+ 1102  cd standoff2conll-master/
+ 1103  python -m spacy evaluate -o ./output/test1.spacy en_core_web_lg ./output/test.spacy 
+ 1104  python -m spacy init fill-config config.cfg config.cfg 
+ 1105  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1106  conda activate nlp_text_analytics
+ 1107  cd standoff2conll-master/
+ 1108  python -m spacy evaluate -o ./output/test.spacy en_core_web_lg ./output/test.spacy 
+ 1109  python -m spacy evaluate -o ./output/test1.spacy en_core_web_lg ./output/test.spacy 
+ 1110  python -m spacy init fill-config config.cfg config.cfg
+ 1111  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1112  python -m spacy convert test.bio -c conll ./output/ -n 10
+ 1113  python -m spacy evaluate -o ./output/test1.spacy en_core_web_lg ./output/test.spacy 
+ 1114  python -m spacy evaluate -o ./output/dev1.spacy en_core_web_lg ./output/dev.spacy 
+ 1115  python -m spacy evaluate -o ./output/train1.spacy en_core_web_lg ./output/train.spacy 
+ 1116  history > commands3.txt
+ 1117  python -m spacy run train
+ 1118  spacy project run train
+ 1119  python -m spacy evaluate output/train.spacy --output training/metrics.json --code scripts/custom_functions.py
+ 1120  python -m pip install label-studio
+ 1121  sudo curl google.com
+ 1122  ll
+ 1123  cd ..
+ 1124  ll
+ 1125  ./HJCPPortal.sh 
+ 1126  sudo curl google.com
+ 1127  python -m pip install label-studio
+ 1128  cd standoff2conll-master/
+ 1129  python -m spacy evaluate output/train.spacy --output training/metrics.json --code scripts/custom_functions.py
+ 1130  python -m spacy evaluate ./output/test.spacy --output training/metrics.json --code scripts/custom_functions.py
+ 1131  python -m spacy evaluate ./output/test1.spacy --output output/test.spacy --code scripts/custom_functions.py
+ 1132  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1133  python -m spacy train /configs/config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1134  python -m spacy train ./configs/config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1135  conda activate nlp_text_analytics
+ 1136  cd standoff2conll-master/
+ 1137  python -m spacy train ./configs/config.cfg --paths.train ./output/test1.spacy --paths.dev ./output/test.spacy
+ 1138  cd output/
+ 1139  vi test.spacy 
+ 1140  python -m spacy train ./configs/config.cfg --paths.train ./output/test1.spacy --paths.dev ./output/test.spacy
+ 1141  python -m spacy train /configs/config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1142  python -m pip install label-studio
+ 1143  python -m spacy train /configs/config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1144  python -m spacy init fill-config config.cfg config.cfg
+ 1145  python -m spacy init fill-config ./configs/config.cfg config.cfg
+ 1146  python -m spacy init fill-config ./configs/config.cfg ./configs/config.cfg
+ 1147  python -m spacy init fill-config config.cfg ./configs/config.cfg
+ 1148  python -m spacy init fill-config config.cfg config.cfg
+ 1149  cd ..
+ 1150  python -m spacy init fill-config ./configs/config.cfg ./configs/config.cfg
+ 1151  python -m spacy train /configs/config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1152  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1153  conda activate nlp_text_analytics
+ 1154  cd standoff2conll-master/
+ 1155  conda activate nlp_text_analytics
+ 1156  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.test ./output/test.spacy
+ 1157  python -m spacy train config.cfg --paths.test ./output/test.spacy --paths.dev ./output/dev.spacy
+ 1158  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1159  cd standoff2conll-master/
+ 1160  conda activate nlp_text_analytics
+ 1161  python3 standoff2conll.py data/train > train.bio
+ 1162  python3 standoff2conll.py data/test > test.bio
+ 1163  python3 standoff2conll.py data/dev > dev.bio
+ 1164  python -m spacy convert train.bio -c conll ./output/ 
+ 1165  python -m spacy convert test.bio -c conll ./output/ 
+ 1166  python -m spacy convert dev.bio -c conll ./output/ 
+ 1167  python -m spacy init fill-config config.cfg config.cfg
+ 1168  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1169  conda activate nlp_text_analytics
+ 1170  cd standoff2conll-master/
+ 1171  python -m spacy init fill-config base_config.cfg config.cfg
+ 1172  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1173  ls
+ 1174  vi base_config.cfg 
+ 1175  python -m spacy init fill-config base_config.cfg config.cfg
+ 1176  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1177  cd standoff2conll-master/
+ 1178  conda activate nlp_text_analytics
+ 1179  python -m spacy init fill-config base_config.cfg config.cfg
+ 1180  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1181  conda activate nlp_text_analytics
+ 1182  cd stq
+ 1183  cd standoff2conll-master/
+ 1184  conda activate nlp_text_analytics
+ 1185  python -m spacy init fill-config base_config.cfg config.cfg
+ 1186  ls
+ 1187  cd standoff2conll-master/
+ 1188  python -m spacy init fill-config base_config.cfg config.cfg
+ 1189  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1190  python -m spacy evaluate -o ./output/test1.spacy en_core_web_sm ./output/dev.spacy
+ 1191  conda activate nlp_text_analytics
+ 1192  python -m spacy train config.cfg --paths.train ./output/train.spacy --paths.dev ./output/dev.spacy
+ 1193  conda activate nlp_text_analytics
+ 1194  cd standoff2conll-master/
+ 1195  python standoff2conll.py data/train > train.bio
+ 1196  python standoff2conll.py data/test > test.bio
+ 1197  python standoff2conll.py data/dev > dev.bio
+ 1198  python -m spacy convert train.bio -c conll ./output/ 
+ 1199  python -m spacy convert test.bio -c conll ./output/ 
+ 1200  python -m spacy convert dev.bio -c conll ./output/ 
+ 1201  cd standoff2conll-master/
+ 1202  conda activate nlp_text_analytics
+ 1203  conda activate nlp_text_analytics
+ 1204  cd standoff2conll-master/
+ 1205  python standoff2conll.py data/train > train.bio
+ 1206  pip install spacy-conll
+ 1207  python -m pip install spacy-conll
+ 1208  curl google.com
+ 1209  sudo curl google.com
+ 1210  ll
+ 1211  cd
+ 1212  ll
+ 1213  cd standoff2conll-master/
+ 1214  sudo curl google.com
+ 1215  python -m pip install spacy-conll
+ 1216  sudo curl google.com
+ 1217  python -m pip install spacy-conll
+ 1218  sudo curl google.com
+ 1219  python -m pip install spacy-conll
+ 1220  sudo curl google.com
+ 1221  ll
+ 1222  sudo curl google.com
+ 1223  cd chia_clinical_trials/
+ 1224  conda activate nlp_text_analytics
+ 1225  ls
+ 1226  cd projects/tutorials/ner_pytorch_medical/
+ 1227  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1228  python -m spacy project run train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1229  python -m spacy project train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1230  python -m spacy run train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1231  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1232  pip show spacy
+ 1233  spacy train -h
+ 1234  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1235  clear
+ 1236  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1237  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev -t2v ./corpus/chia_ner_dev.spacy
+ 1238  python -m spacy train ./configs/config.cfg --paths.train -t2v ./corpus/chia_ner_train.spacy --paths.dev -t2v ./corpus/chia_ner_dev.spacy
+ 1239  clear
+ 1240  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1241  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy 
+ 1242  ls
+ 1243  history
+ 1244  clear
+ 1245  python -m spacy train ./configs/spacy_config.cfg --paths.train ./corpus/chia_ner_train.spacy 
+ 1246  python -m spacy train ./configs/spacy_config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1247  python -m spacy project run train ./configs/spacy_config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1248  python -m spacy run train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1249  python -m spacy evaluate ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1250  python -m spacytrain ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1251  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1252  clear
+ 1253  python -m spacy train_cpu ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1254  cd chia_clinical_trials/
+ 1255  conda activate nlp_text_analytics
+ 1256  ls
+ 1257  cd projects/
+ 1258  ls
+ 1259  cd tutorials/ner_pytorch_medical/
+ 1260  ls
+ 1261  python -m spacy project assets
+ 1262  python -m spacy project run preprocess
+ 1263  python -m spacy project assets
+ 1264  python -m spacy project run preprocess
+ 1265  python -m spacy project run train
+ 1266  clear
+ 1267  python -m spacy init fill-config ./configs/config.cfg config.cfg
+ 1268  clear
+ 1269  python -m spacy init fill-config config.cfg config.cfg
+ 1270  ls
+ 1271  python -m spacy init fill-config /configs/config.cfg config.cfg
+ 1272  python -m spacy init fill-config /configs/config.cfg /configs/config.cfg
+ 1273  python -m spacy init fill-config --help
+ 1274  clear
+ 1275  python -m spacy train config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1276  python -m spacy train /configs/config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1277  ls
+ 1278  python -m spacy train ./configs/config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1279  python -m spacy train ./configs/spacy_config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1280  clear
+ 1281  python -m spacy train ./configs/spacy_config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1282  clear
+ 1283  python -m spacy train ./configs/spacy_config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1284  pip install git+https://github.com/explosion/spacy-transformers
+ 1285  pip install spacy[transformers]
+ 1286  python -m spacy train ./configs/spacy_config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1287  clear
+ 1288  python -m spacy train ./configs/config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1289  pip install spacy-transformers
+ 1290  pip install spacy_transformers
+ 1291  python -m spacy train ./configs/config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1292  clear
+ 1293  python -m spacy train ./configs/config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1294  pip install spacy-pytorch-transformers
+ 1295  python -m pip install spacy-pytorch-transformers
+ 1296  python -m spacy train ./configs/config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy
+ 1297  clear
+ 1298  ks
+ 1299  ls
+ 1300  cd corpus/
+ 1301  ls
+ 1302  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1303  clear
+ 1304  ls
+ 1305  cd ..
+ 1306  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1307  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1308  pip install -U srsly
+ 1309  conda activate nlp_text_analytics
+ 1310  cd chia_clinical_trials/
+ 1311  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1312  cd projects/tutorials/ner_pytorch_medical/
+ 1313  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1314  history
+ 1315  python -m spacy init fill-config ./configs/config.cfg config.cfg
+ 1316  python -m spacy init fill-config config.cfg ./configs/config.cfg
+ 1317  python -m spacy init fill-config config.cfg config.cfg
+ 1318  python -m spacy project assets
+ 1319  python -m spacy init-model fill-config config.cfg config.cfg
+ 1320  python -m spacy init
+ 1321  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1322  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy
+ 1323  cd ..
+ 1324  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy
+ 1325  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1326  cd ..
+ 1327  jupyter-noteboo
+ 1328  sudo apt install jupyter-notebook
+ 1329  sudo curl google.com
+ 1330  ll
+ 1331  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1332  cd projects/tutorials/ner_pytorch_medical/
+ 1333  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1334  python -m spacy train config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1335  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1336  cd configs/
+ 1337  python -m spacy initi fill-config config.cfg
+ 1338  python -m spacy init fill-config config.cfg
+ 1339  python -m spacy init-model fill-config config.cfg
+ 1340  python -m pip show spacy
+ 1341  sudo apt install jupyter-notebook
+ 1342  cd ..
+ 1343  sudo apt install jupyter-notebook
+ 1344  sudo su
+ 1345  sudo root
+ 1346  pip install jupyter-notebook
+ 1347  python -m pip install jupyter-notebook
+ 1348  sudo apt install jupyter-notebook
+ 1349  sudo curl google.com
+ 1350  cd chia_clinical_trials/projects/tutorials/ner_pytorch_medical/
+ 1351  python -m spacy train config.cfg --paths.train ./corpus/train.spacy --paths.dev ./corpus/dev.spacy --training.batch_size 128
+ 1352  ls
+ 1353  ls
+ 1354  vi config
+ 1355  vi config.cfg 
+ 1356  cd ..
+ 1357  python -m spacy run
+ 1358  python -m spacy train
+ 1359  python -m spacy train -h
+ 1360  python -m spacy train en_core_web_lg ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1361  ls
+ 1362  cd co
+ 1363  cd corpus/
+ 1364  ls
+ 1365  cd ..
+ 1366  cd scripts/
+ 1367  ls
+ 1368  cd ..
+ 1369  pip install jupyter-notebook
+ 1370  history
+ 1371  sudo curl google.com
+ 1372  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1373  spacy train: error: the following arguments are required: dev_path
+ 1374  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1375  python -m pip install spacy
+ 1376  python -m pip install --upgrade pip
+ 1377  sudo curl google.com
+ 1378  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1379  python -m spacy train ./configs/config.cfg --paths.train /corpus/chia_ner_train.spacy --paths.dev /corpus/chia_ner_dev.spacy
+ 1380  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1381  python -m pip show spacy
+ 1382  python -m pip install --user spacy==3.1.3
+ 1383  python -m pip install --user spacy
+ 1384  sudo curl google.com
+ 1385  python -m pip install --user spacy==3.1.3
+ 1386  sudo curl google.com
+ 1387  ll
+ 1388  sudo curl google.com
+ 1389  vi curl google.com
+ 1390  python -m pip install --user spacy==3.1.3
+ 1391  python -m pip show spacy
+ 1392  cd chia_clinical_trials/projects/tutorials/ner_pytorch_medical/
+ 1393  conda activate nlp_text_analytics
+ 1394  python -m pip install spacy==3.1.3
+ 1395  python -m pip install spacy==3.3.1
+ 1396  python -m pip install spacy==3.1.3
+ 1397  clear
+ 1398  pip install-U pip setuptools wheel --trusted-host pypi.org
+ 1399  pip install -U pip setuptools wheel --trusted-host pypi.org
+ 1400  python -m pip install -U pip setuptools wheel --trusted-host pypi.org
+ 1401  python -m pip install spacy==3.1.3
+ 1402  python -m pip install spacy --trusted-host pypi.org
+ 1403  python -m pip show spacy
+ 1404  pip install spacy --trusted-host pypi.org
+ 1405  pip3 install spacy --trusted-host pypi.org
+ 1406  python3 -m pip install spacy==3.1.3
+ 1407  pip3 install spacy==3.1.3
+ 1408  pip install spacy==3.1.3
+ 1409  .config/pip/pip.conf
+ 1410  $HOME/.config/pip/pip.conf
+ 1411  cd
+ 1412  $HOME/.config/pip/pip.conf
+ 1413  ls
+ 1414  ll
+ 1415  which pip.conf
+ 1416  where pip.conf
+ 1417  ls
+ 1418  ll
+ 1419  cd /
+ 1420  ls
+ 1421  cd ..
+ 1422  ll
+ 1423  exit
+ 1424  cd chia_clinical_trials/
+ 1425  conda activate nlp_text_analytics
+ 1426  history
+ 1427  cd projects/tutorials/ner_pytorch_medical/
+ 1428  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1429  sudo curl google.com
+ 1430  ll
+ 1431  [11:23 AM] Ishan Borker
+ 1432  python -m pip install --user spacy==3.1.3
+ 1433  [11:24 AM] Ishan Borker
+ 1434  sudo apt install jupyter-notebook
+ 1435  python -m pip install --user spacy==3.1.3
+ 1436  sudo curl google.com
+ 1437  ll
+ 1438  ./HJCPPortal.sh 
+ 1439  cd
+ 1440  sudo curl google.com
+ 1441  ll
+ 1442  ./HJCPPortal.sh 
+ 1443  sudo curl google.com
+ 1444  python -m pip install --user spacy
+ 1445  sudo curl google.com
+ 1446  ll
+ 1447  ./HJCPPortal.sh 
+ 1448  python -m pip install spacy==3.1.3
+ 1449  sudo apt install jupyter-notebook
+ 1450  apt install jupyter-notebook
+ 1451  root apt install jupyter-notebook
+ 1452  sudo apt install jupyter-notebook
+ 1453  python -m pip install spacy==3.1.3
+ 1454  conda activate nlp_text_analytics
+ 1455  cd chia_clinical_trials/
+ 1456  pip install spacy==3.1.3
+ 1457  pip install spacy==2.3.7
+ 1458  python --version
+ 1459  pip --version
+ 1460  pip install --upgrade pip
+ 1461  pip3 install --upgrade pip
+ 1462  pip3 install spacy==3.1.3
+ 1463  pip3 show spacy
+ 1464  cd projects/tutorials/ner_pytorch_medical/
+ 1465  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1466  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1467  python3 -m spacy download en_core_web_sm
+ 1468  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1469  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1470  python -m spacy init fill-config ./configs/config.
+ 1471  python3 -m spacy download en
+ 1472  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1473  conda install -c conda-forge spacy=3.1.3
+ 1474  pip3 show spacy
+ 1475  python3
+ 1476  pip install spacy==2.2.4
+ 1477  pip install spacy==3.1.3
+ 1478  pip3 install spacy==3.1.3
+ 1479  pip3 show spacy
+ 1480  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1481  ls
+ 1482  clear
+ 1483  cd configs/
+ 1484  ls
+ 1485  vi conf
+ 1486  vi config.cfg 
+ 1487  cd ..
+ 1488  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1489  conda config --add channels conda-forge
+ 1490  conda install spacy
+ 1491  pip3 install spacy
+ 1492  pip3 show spacy
+ 1493  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1494  pip3 show spacy
+ 1495  ls
+ 1496  cd configs/
+ 1497  ls
+ 1498  cd ..
+ 1499  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1500  python -m spacy run all
+ 1501  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1502  clear
+ 1503  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1504  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1505  cd
+ 1506  ls
+ 1507  cd chia_clinical_trials/
+ 1508  ls
+ 1509  rm -r __MACOSX/
+ 1510  ls
+ 1511  cd ..
+ 1512  ls
+ 1513  rm -r chia_clinical_trials/
+ 1514  ls
+ 1515  clear
+ 1516  cd chia_clinical_trials/
+ 1517  ls
+ 1518  cd projects/tutorials/ner_pytorch_medical/
+ 1519  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1520  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1521  sudo apt install jupyter-notebook
+ 1522  jupyter-notebook
+ 1523  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1524  pip3 install spacy==2.7.9
+ 1525  pip3 install spacy==2.7.1
+ 1526  pip3 install spacy==2.3.7
+ 1527  pip install spacy==2.3.7
+ 1528  pip show spacy
+ 1529  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1530  pip install spacy==3.3.1
+ 1531  pip install spacy==3.3.0
+ 1532  pip3 install spacy==3.3.0
+ 1533  pip3 install spacy==3.1.3
+ 1534  pip show spacy
+ 1535  pip3 install spacy==3.1.3
+ 1536  pip install spacy==3.1.3
+ 1537  python -m pip install spacy==3.1.3
+ 1538  python -m pip show spacy
+ 1539  clear
+ 1540  python -m pip show spacy
+ 1541  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1542  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1543  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1544  clear
+ 1545  python -m spacy init fill-config ./configs/config.cfg ./configs/config.cfg 
+ 1546  python -m pip install --upgrade pip --user 
+ 1547  python3 -m pip install --upgrade pip --user 
+ 1548  sudo curl google.com
+ 1549  ll
+ 1550  .cd
+ 1551  cd
+ 1552  sudo curl google.com
+ 1553  ll
+ 1554  ./HJCPPortal.sh 
+ 1555  ./HJCPPortal.sh  --output
+ 1556  python3 -m pip install --upgrade pip --user 
+ 1557  python -m pip install -U pip setuptools wheel
+ 1558  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1559  cd chia_clinical_trials/
+ 1560  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1561  cd projects/tutorials/ner_pytorch_medical/
+ 1562  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1563  pip show spacy
+ 1564  pip3 show spacy
+ 1565  pip install -U spacy==3.1.3
+ 1566  pip uninstall spacy
+ 1567  pip3 show spacy
+ 1568  pip show spacy
+ 1569  pip uninstall spacy
+ 1570  pip install spacy
+ 1571  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1572  pip3 uninstall spacy
+ 1573  pip uninstall spacy
+ 1574  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1575  pip3 show spacy
+ 1576  pip3 install spacy==3.1.3
+ 1577  python3 -m pip install spacy==3.1.3
+ 1578  pip3 install spacy==3.1.3
+ 1579  pip install spacy==3.1.3
+ 1580  pip install spacy == 3.1.3
+ 1581  pip install spacy==3.1.3
+ 1582  pip3 install --user  spacy==3.1.3
+ 1583  python3 -m pip install --user  spacy==3.1.3
+ 1584  exit
+ 1585  cd chia_clinical_trials/projects/tutorials/ner_pytorch_medical/
+ 1586  conda activate nlp_text_analytics
+ 1587  clear
+ 1588  python3 -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1589  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1590  pip show spacy
+ 1591  pip uninstall spacy
+ 1592  clear
+ 1593  pip3 show spacy
+ 1594  pip install spacy==3.1.3
+ 1595  pip install -U spacy==3.1.3
+ 1596  python -m pip install -U spacy==3.1.3
+ 1597  python -m spacy train ./configs/config.cfg --paths.train ./corpus/chia_ner_train.spacy --paths.dev ./corpus/chia_ner_dev.spacy
+ 1598  pip install spacy
+ 1599  pip3 install spacy==3.1.3
+ 1600  pip3 install --user spacy==3.1.3
+ 1601  pip install -U pip setuptools wheel --trusted-host pypi.org
+ 1602  pip install spacy --trusted-host pypi.org
+ 1603  pip show spacy
+ 1604  pip uninstall spacy==2.3.7
+ 1605  pip install spacy==3.1.3
+ 1606  python -m spacy init labels ./configs/config.cfg ./corpus --paths.train ./corpus/chia_ner_train.spacy 
+ 1607  pip install spacy==3.1.3
+ 1608  pip uninstall spacy --trusted-host pypi.org
+ 1609  python -m pip uninstall spacy --trusted-host pypi.org
+ 1610  python -m pip install spacy==3.1.3 
+ 1611  python3 -m pip install spacy==3.1.3 
+ 1612  python3 -m pip install spacy==3.1.3
+ 1613  sudo curl google.com
+ 1614  ll
+ 1615  cd
+ 1616  ll
+ 1617  ./HJCPPortal.sh 
+ 1618  history
+ 1619  pwd
+ 1620  history > commands4.txt
